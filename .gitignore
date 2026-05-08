@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# hatch-vcs generated
+src/vexy_mkdocs_tools/__version__.py
+

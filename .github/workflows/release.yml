@@ -1,0 +1,63 @@
+# this_file: .github/workflows/release.yml
+# Tag-triggered release. Uses PyPI Trusted Publishing (OIDC) — no secret needed
+# in the repo, but you must configure the publisher once at:
+#   https://pypi.org/manage/account/publishing/
+# (project: vexy-mkdocs-tools, owner: vexyart, repo: vexy-mkdocs-tools,
+#  workflow: release.yml, environment: pypi).
+name: release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - run: uv python install 3.12
+
+      - run: uv sync --extra dev
+
+      - run: uvx ruff check src tests
+
+      - run: uv run python -m pytest -q
+
+      - run: uvx hatch build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/vexy-mkdocs-tools
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

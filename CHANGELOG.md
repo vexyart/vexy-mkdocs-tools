@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.0]
+
+### Added
+- First PyPI release as `vexy-mkdocs-tools`.
+- `build.sh` runs `uvx hatch clean` before building; `publish.sh` runs `gitnextver .`.
+
 ## [Unreleased]
 
 ### Added

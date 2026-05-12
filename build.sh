@@ -8,5 +8,6 @@ rm -rf dist
 uv sync --extra dev
 uv run python -m pytest -q
 uvx ruff check src tests
+uvx hatch clean
 uvx hatch build
 ls -la dist

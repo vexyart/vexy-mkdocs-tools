@@ -64,6 +64,10 @@ uvx ruff check src tests
 
 Releases are tag-driven — push a `vX.Y.Z` tag and the `release` workflow ships to PyPI.
 
+## Docs
+
+Full documentation, including the site-layout contract and the `materialx` theme note: <https://vexyart.github.io/vexy-mkdocs-tools/>.
+
 ## License
 
 Apache-2.0.

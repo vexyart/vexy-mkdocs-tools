@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+- End-to-end tests that build a real fixture site (`src_docs/md` + `mkdocs.yml`
+  → `docs/`) with `properdocs`, asserting the page renders, `.nojekyll` is
+  written, and a `src_docs/md/CNAME` is copied into the output. Skip gracefully
+  when `properdocs` is not on PATH.
+- Jekyll documentation site under `docs/` (Just the Docs remote theme)
+  documenting the `mkdocs/mkdocs.yml` + `src_docs/md/` → `docs/` contract, the
+  `materialx` theme name, and the `CNAME` convention.
+- `CLAUDE.md` with `this_file:` map and pipeline notes for contributors.
+- `TODO.md` capturing path-to-v1.0, robustness ideas, and known behavior notes.
+
+### Changed
+- `.gitignore` now excludes macOS `.DS_Store` and friends.
+
 ## [0.1.0]
 
 ### Added

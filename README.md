@@ -1,5 +1,7 @@
 # vexy-mkdocs-tools
 
+**Documentation:** https://vexy.dev/vexy-mkdocs-tools/
+
 Fire-based CLI that bundles [ProperDocs](https://github.com/jaywhj/properdocs) + [MaterialX](https://github.com/jaywhj/mkdocs-materialx) and the standard `vexy-` plugin set, so a site builds in one shot:
 
 ```bash
@@ -58,15 +60,15 @@ ProperDocs 1.6.7+, MaterialX 10.1.4+, plus `pymdown-extensions`, `mkdocs-awesome
 uv sync --extra dev
 uv run python -m pytest -q
 uvx ruff check src tests
-./build.sh    # full build + test + wheel/sdist
-./publish.sh  # upload to PyPI (needs UV_PUBLISH_TOKEN)
+./build.sh    # docs (src_docs/ → docs/) + wheel/sdist + twine check
+./publish.sh  # gitnextver tag → build → uv publish (needs UV_PUBLISH_TOKEN)
 ```
 
 Releases are tag-driven — push a `vX.Y.Z` tag and the `release` workflow ships to PyPI.
 
 ## Docs
 
-Full documentation, including the site-layout contract and the `materialx` theme note: <https://vexyart.github.io/vexy-mkdocs-tools/>.
+Full documentation, including the site-layout contract and the `materialx` theme note: <https://vexy.dev/vexy-mkdocs-tools/>.
 
 ## License
 

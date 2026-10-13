@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### Changed (docs site and release scripts)
+- Documentation moved from the hand-written Jekyll site in `docs/` to ProperDocs +
+  MaterialX: source in `src_docs/md/` (9 pages), config in `src_docs/mkdocs.yml`,
+  built into `docs/` by `src_docs/build.sh` and the new `Docs` workflow. Published at
+  https://vexy.dev/vexy-mkdocs-tools/.
+- `build.sh` builds docs and/or the package (`./build.sh [all|docs|package]`);
+  `publish.sh` tags with `gitnextver`, builds and uploads with `uv publish`.
+- `release.yml` publishes with `skip-existing: true`, so a version already uploaded
+  by `publish.sh` does not fail the workflow.
+- `pyproject.toml` gains a `Documentation` URL.
+
 ### Added
 - End-to-end tests that build a real fixture site (`src_docs/md` + `mkdocs.yml`
   → `docs/`) with `properdocs`, asserting the page renders, `.nojekyll` is

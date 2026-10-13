@@ -53,6 +53,8 @@ The theme registered by the bundled stack is **`materialx`**, not `material`.
 
 Two separate doc surfaces, do not confuse them:
 
-- **This repo's own docs** live in `docs/` as a hand-written Jekyll site
-  (Just the Docs remote theme). `docs/.nojekyll` is *not* present here.
+- **This repo's own docs**: source in `src_docs/md/`, config in
+  `src_docs/mkdocs.yml`, built into `docs/` by `src_docs/build.sh` (ProperDocs +
+  MaterialX, strict) and the `Docs` workflow. Served at
+  https://vexy.dev/vexy-mkdocs-tools/. Do not edit `docs/` by hand.
 - **Consumer sites** use `docs/` as MkDocs *output* with a `.nojekyll` marker.

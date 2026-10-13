@@ -225,3 +225,9 @@ src/vexy_mkdocs_tools/__version__.py
 .AppleDouble
 .LSOverride
 
+
+# Repo hygiene (docs/packaging spec)
+.omc/
+.venv/
+site/
+node_modules/

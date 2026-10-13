@@ -52,6 +52,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/vexyart/vexy-mkdocs-tools"
+Documentation = "https://vexy.dev/vexy-mkdocs-tools/"
 Repository = "https://github.com/vexyart/vexy-mkdocs-tools"
 Issues = "https://github.com/vexyart/vexy-mkdocs-tools/issues"
 Changelog = "https://github.com/vexyart/vexy-mkdocs-tools/blob/main/CHANGELOG.md"

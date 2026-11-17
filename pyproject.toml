@@ -34,13 +34,18 @@ dependencies = [
     "mkdocs-materialx>=10.1.4",
     "pymdown-extensions>=10.2",
     "mkdocs-awesome-nav>=3.3",
-    "mkdocs-include-markdown-plugin>=7.2",
+    "mkdocs-include-markdown-plugin>=7.3",
+    "mkdocs-codeinclude-plugin>=0.3.1",
+    "mkdocstrings[python]>=1.0.7",
+    "mkdocs-autorefs>=1.4.4",
+    "mkdocs-print-site-plugin>=2.9",
     "mkdocs-llmstxt>=0.2",
     "mkdocs-copy-to-llm>=0.2",
     "mkdocs-rss-plugin>=1.17",
 ]
 
 [project.optional-dependencies]
+authoring = ["mkdocs-live-edit-plugin>=0.4.1"]
 flowmark = [
     "flowmark>=0.6.5",
 ]

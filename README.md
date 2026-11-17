@@ -52,7 +52,7 @@ The CLI walks up from `cwd` until it finds a directory containing both `mkdocs/m
 
 ## Bundled dependencies
 
-ProperDocs 1.6.7+, MaterialX 10.1.4+, plus `pymdown-extensions`, `mkdocs-awesome-nav`, `mkdocs-include-markdown-plugin`, `mkdocs-llmstxt`, `mkdocs-copy-to-llm`, `mkdocs-rss-plugin`. The `[flowmark]` extra adds `flowmark`.
+ProperDocs 1.6.7+, MaterialX 10.1.4+, plus `pymdown-extensions`, `mkdocs-awesome-nav`, `mkdocs-include-markdown-plugin`, `mkdocs-llmstxt`, `mkdocs-copy-to-llm`, `mkdocs-rss-plugin`, `mkdocstrings[python]`, `mkdocs-autorefs`, `mkdocs-codeinclude-plugin` and `mkdocs-print-site-plugin`. The `[authoring]` extra adds browser editing with `mkdocs-live-edit-plugin`. The `[flowmark]` extra adds `flowmark`.
 
 ## Develop
 

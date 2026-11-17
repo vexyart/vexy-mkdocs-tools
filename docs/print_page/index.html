@@ -1,0 +1,2460 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="One command that builds every FontLab/Vexy documentation site with ProperDocs, MaterialX and a bundled plugin set">
+      
+      
+      
+        <link rel="canonical" href="https://vexy.dev/vexy-mkdocs-tools/print_page/">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+        
+        
+        
+          <link rel="icon" href="../assets/images/favicon.png">
+        
+      
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-materialx-10.1.8">
+    
+    
+      
+        <title>Print this guide - vexy-mkdocs-tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.314bbef5.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a45159b5.min.css">
+      
+    
+    
+
+    
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-materialx.css">
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("/vexy-mkdocs-tools/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" data-mx-topbar="glass">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="toc" type="checkbox" id="__toc" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__toc"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#index" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="vexy-mkdocs-tools" class="md-header__button md-logo" aria-label="vexy-mkdocs-tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            vexy-mkdocs-tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print this guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vexyart/vexy-mkdocs-tools" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vexyart/vexy-mkdocs-tools
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="vexy-mkdocs-tools" class="md-nav__button md-logo" aria-label="vexy-mkdocs-tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    vexy-mkdocs-tools
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vexyart/vexy-mkdocs-tools" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vexyart/vexy-mkdocs-tools
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../site-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site layout
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../source-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Source API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print this guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print this guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Home
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Quick start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Command reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Site layout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 Site configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 Changelog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 Source API
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Home
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Quick start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Command reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Site layout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 Site configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 Changelog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 Source API
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="vexy-mkdocs-tools">vexy-mkdocs-tools<a class="headerlink" href="#index-vexy-mkdocs-tools" title="Permanent link">&para;</a></h1>
+<p><code>vexy-mkdocs-tools</code> is a command-line tool that builds a documentation site
+from a folder of Markdown files. It installs ProperDocs, the MaterialX theme and
+a fixed set of MkDocs plugins, and runs the same build steps that every FontLab
+and Vexy documentation site uses.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#index-__codelineno-0-1"></a>uvx<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>build
+</code></pre></div>
+<p>The tool has two command names, <code>vexy-mkdocs-tools</code> and <code>vmt</code>. They run the same
+program.</p>
+<h2 id="index-what-it-does">What it does<a class="headerlink" href="#index-what-it-does" title="Permanent link">&para;</a></h2>
+<p>A site repository that uses this tool contains only Markdown and one
+configuration file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#index-__codelineno-1-1"></a>my-site/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#index-__codelineno-1-2"></a>├── mkdocs/mkdocs.yml     # site configuration
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#index-__codelineno-1-3"></a>├── src_docs/md/          # Markdown source
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#index-__codelineno-1-4"></a>└── docs/                 # generated site, served by GitHub Pages
+</code></pre></div>
+<p><code>vmt build</code> turns <code>src_docs/md/</code> into a static site in <code>docs/</code> in four steps:</p>
+<ol>
+<li><strong>Format.</strong> If <code>flowmark</code> is on your <code>PATH</code>, it reformats the Markdown in
+   <code>src_docs/md/</code> in place. If not, it prints a warning and continues.</li>
+<li><strong>Clean.</strong> It deletes everything in <code>docs/</code> except a file named <code>CNAME</code>.</li>
+<li><strong>Build.</strong> It runs <code>properdocs build</code> with <code>mkdocs/mkdocs.yml</code> as the
+   configuration and <code>docs/</code> as the output folder.</li>
+<li><strong>Mark.</strong> It creates an empty <code>docs/.nojekyll</code> file, so GitHub Pages serves
+   the files as they are instead of running Jekyll on them.</li>
+</ol>
+<h2 id="index-why-it-exists">Why it exists<a class="headerlink" href="#index-why-it-exists" title="Permanent link">&para;</a></h2>
+<p>Without this tool, each site repository has to list the same Python packages
+and carry its own copy of the build script. With it, the package list and the
+script live in one place, and a site repository only needs its Markdown and its
+<code>mkdocs.yml</code>.</p>
+<h2 id="index-what-it-installs">What it installs<a class="headerlink" href="#index-what-it-installs" title="Permanent link">&para;</a></h2>
+<p>Installing <code>vexy-mkdocs-tools</code> also installs:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Minimum version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>properdocs</code></td>
+<td>1.6.7</td>
+<td>The site generator; its configuration format is MkDocs' <code>mkdocs.yml</code></td>
+</tr>
+<tr>
+<td><code>mkdocs-materialx</code></td>
+<td>10.1.4</td>
+<td>The <code>materialx</code> theme and its <code>materialx/*</code> plugins</td>
+</tr>
+<tr>
+<td><code>pymdown-extensions</code></td>
+<td>10.2</td>
+<td>Markdown extensions</td>
+</tr>
+<tr>
+<td><code>mkdocs-awesome-nav</code></td>
+<td>3.3</td>
+<td>Plugin <code>awesome-nav</code>: customize the navigation structure</td>
+</tr>
+<tr>
+<td><code>mkdocs-include-markdown-plugin</code></td>
+<td>7.3</td>
+<td>Plugin <code>include-markdown</code>: include one Markdown file in another</td>
+</tr>
+<tr>
+<td><code>mkdocs-codeinclude-plugin</code></td>
+<td>0.3.1</td>
+<td>Include code from maintained source files</td>
+</tr>
+<tr>
+<td><code>mkdocstrings[python]</code></td>
+<td>1.0.7</td>
+<td>Generate API documentation from Python source</td>
+</tr>
+<tr>
+<td><code>mkdocs-autorefs</code></td>
+<td>1.4.4</td>
+<td>Resolve references between documentation pages</td>
+</tr>
+<tr>
+<td><code>mkdocs-print-site-plugin</code></td>
+<td>2.9</td>
+<td>Combine a guide into a printable page</td>
+</tr>
+<tr>
+<td><code>mkdocs-llmstxt</code></td>
+<td>0.2</td>
+<td>Plugin <code>llmstxt</code>: generate an <code>/llms.txt</code> file</td>
+</tr>
+<tr>
+<td><code>mkdocs-copy-to-llm</code></td>
+<td>0.2</td>
+<td>Plugin <code>copy-to-llm</code>: add "Copy to LLM" buttons</td>
+</tr>
+<tr>
+<td><code>mkdocs-rss-plugin</code></td>
+<td>1.17</td>
+<td>Plugin <code>rss</code>: generate RSS and JSON feeds</td>
+</tr>
+<tr>
+<td><code>fire</code></td>
+<td>0.7</td>
+<td>The command-line interface</td>
+</tr>
+<tr>
+<td><code>loguru</code></td>
+<td>0.7</td>
+<td>Logging</td>
+</tr>
+</tbody>
+</table>
+<p>The optional <code>flowmark</code> extra adds <code>flowmark</code> 0.6.5 or later for the format step.
+The <code>authoring</code> extra adds <code>mkdocs-live-edit-plugin</code> for editing in a local preview.</p>
+<h2 id="index-where-to-go-next">Where to go next<a class="headerlink" href="#index-where-to-go-next" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#quickstart">Quick start</a>: build a new site from scratch.</li>
+<li><a href="#cli">Command reference</a>: every command and flag.</li>
+<li><a href="#site-layout">Site layout</a>: how the tool finds the site and its folders.</li>
+<li><a href="#configuration">Site configuration</a>: what to put in <code>mkdocs/mkdocs.yml</code>.</li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul></section><section class="print-page" id="installation" heading-number="2"><nav class='md-tags'><span class='md-tag'>Developer guide</span><span class='md-tag'>Installation</span></nav><h1 id="installation">Installation<a class="headerlink" href="#installation-installation" title="Permanent link">&para;</a></h1>
+<h2 id="installation-requirements">Requirements<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Python 3.12 or later.</li>
+<li><a href="https://docs.astral.sh/uv/"><code>uv</code></a> is recommended. Plain <code>pip</code> also works.</li>
+</ul>
+<h2 id="installation-run-without-installing">Run without installing<a class="headerlink" href="#installation-run-without-installing" title="Permanent link">&para;</a></h2>
+<p><code>uvx</code> downloads the package into a cached environment and runs it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#installation-__codelineno-0-1"></a>uvx<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>build
+</code></pre></div>
+<p>To include the optional Flowmark formatter in the same run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#installation-__codelineno-1-1"></a>uvx<span class="w"> </span>--with<span class="w"> </span>flowmark<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>build
+</code></pre></div>
+<h2 id="installation-install-into-an-environment">Install into an environment<a class="headerlink" href="#installation-install-into-an-environment" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#installation-__codelineno-2-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>vexy-mkdocs-tools
+</code></pre></div>
+<p>With the Flowmark formatter:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#installation-__codelineno-3-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">"vexy-mkdocs-tools[flowmark]"</span>
+</code></pre></div>
+<p>With <code>pip</code>, use the same package names:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#installation-__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">"vexy-mkdocs-tools[flowmark]"</span>
+</code></pre></div>
+<p>Both commands also install ProperDocs, the MaterialX theme and the bundled
+plugins, listed on the <a href="#index-what-it-installs">home page</a>.</p>
+<h2 id="installation-install-as-a-tool">Install as a tool<a class="headerlink" href="#installation-install-as-a-tool" title="Permanent link">&para;</a></h2>
+<p>To keep <code>vmt</code> on your <code>PATH</code> without activating an environment:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#installation-__codelineno-5-1"></a>uv<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>vexy-mkdocs-tools
+</code></pre></div>
+<h2 id="installation-check-the-installation">Check the installation<a class="headerlink" href="#installation-check-the-installation" title="Permanent link">&para;</a></h2>
+<p><code>vmt</code> looks for a site before it runs any command, including <code>version</code>. Run the
+check from inside a site folder (see <a href="#site-layout">Site layout</a>), or name a
+folder with <code>--root</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#installation-__codelineno-6-1"></a>vmt<span class="w"> </span>--root<span class="w"> </span>path/to/site<span class="w"> </span>version
+</code></pre></div>
+<p>The command prints the installed version, for example <code>0.1.1</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Outside a site folder and without <code>--root</code>, every command stops with a
+<code>BuildError: cannot locate site root …</code> traceback. See
+<a href="#troubleshooting-cannot-locate-site-root">Troubleshooting</a>.</p>
+</div></section><section class="print-page" id="quickstart" heading-number="3"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="quick-start">Quick start<a class="headerlink" href="#quickstart-quick-start" title="Permanent link">&para;</a></h1>
+<p>This page creates a new documentation site and builds it with <code>vmt</code>.</p>
+<h2 id="quickstart-prerequisites">Prerequisites<a class="headerlink" href="#quickstart-prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>uv</code> installed.</li>
+<li>An empty folder for the site, here called <code>my-site</code>.</li>
+</ul>
+<h2 id="quickstart-create-the-site">Create the site<a class="headerlink" href="#quickstart-create-the-site" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Create the three folders the tool expects:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#quickstart-__codelineno-0-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>my-site/mkdocs<span class="w"> </span>my-site/src_docs/md<span class="w"> </span>my-site/docs
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#quickstart-__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>my-site
+</code></pre></div>
+</li>
+<li>
+<p>Create <code>mkdocs/mkdocs.yml</code> with this content:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#quickstart-__codelineno-1-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My site</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#quickstart-__codelineno-1-2"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../src_docs/md</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#quickstart-__codelineno-1-3"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#quickstart-__codelineno-1-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx</span>
+</code></pre></div>
+<p><code>docs_dir</code> is resolved against the folder that holds <code>mkdocs.yml</code>, so
+<code>../src_docs/md</code> points from <code>mkdocs/</code> to the Markdown folder. The theme
+name is <code>materialx</code>, not <code>material</code>.</p>
+</li>
+<li>
+<p>Create the first page, <code>src_docs/md/index.md</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#quickstart-__codelineno-2-1"></a><span class="gh"># Hello</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#quickstart-__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#quickstart-__codelineno-2-3"></a>This is my site.
+</code></pre></div>
+</li>
+<li>
+<p>Build the site:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#quickstart-__codelineno-3-1"></a>uvx<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>build
+</code></pre></div>
+</li>
+</ol>
+<p>The tool prints its steps:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#quickstart-__codelineno-4-1"></a>WARNING  | flowmark not on PATH; install the [flowmark] extra (`uv pip install vexy-mkdocs-tools[flowmark]`) to enable this step
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#quickstart-__codelineno-4-2"></a>INFO     | Cleaned /…/my-site/docs (preserved CNAME)
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#quickstart-__codelineno-4-3"></a>INFO     | Running: properdocs build -f /…/my-site/mkdocs/mkdocs.yml -d /…/my-site/docs
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#quickstart-__codelineno-4-4"></a>INFO     | Build complete
+</code></pre></div>
+<p><code>docs/</code> now holds the site: <code>index.html</code>, <code>404.html</code>, <code>assets/</code>, <code>search/</code>,
+<code>sitemap.xml</code>, <code>sitemap.xml.gz</code> and an empty <code>.nojekyll</code>.</p>
+<p>The warning only means that the format step was skipped. To run it, use
+<code>uvx --with flowmark vexy-mkdocs-tools build</code>. To skip it without a warning,
+add <code>--no-format</code>.</p>
+<h2 id="quickstart-preview-while-you-write">Preview while you write<a class="headerlink" href="#quickstart-preview-while-you-write" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#quickstart-__codelineno-5-1"></a>uvx<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>serve
+</code></pre></div>
+<p>This runs <code>properdocs serve</code> with the same configuration. Press
+<kbd>Ctrl</kbd>+<kbd>C</kbd> to stop it; the tool then prints <code>Server stopped</code>.</p>
+<h2 id="quickstart-add-a-custom-domain">Add a custom domain<a class="headerlink" href="#quickstart-add-a-custom-domain" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Put the domain in <code>src_docs/md/CNAME</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#quickstart-__codelineno-6-1"></a><span class="nb">echo</span><span class="w"> </span>docs.example.com<span class="w"> </span>&gt;<span class="w"> </span>src_docs/md/CNAME
+</code></pre></div>
+</li>
+<li>
+<p>Build again.</p>
+</li>
+</ol>
+<p>ProperDocs copies every file that is not Markdown from <code>src_docs/md/</code> to
+<code>docs/</code>, so <code>docs/CNAME</code> is written on every build. A <code>CNAME</code> that exists only in
+<code>docs/</code> does not survive a full build; see <a href="#site-layout-the-cname-file">Site layout</a>.</p>
+<h2 id="quickstart-publish-with-github-pages">Publish with GitHub Pages<a class="headerlink" href="#quickstart-publish-with-github-pages" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Commit <code>mkdocs/</code>, <code>src_docs/</code> and the built <code>docs/</code> folder.</li>
+<li>In the repository settings on GitHub, set <strong>Pages</strong> to deploy from the
+   default branch and the <code>/docs</code> folder.</li>
+</ol>
+<p>The <code>.nojekyll</code> file that <code>vmt build</code> writes tells GitHub Pages to publish the
+files without running Jekyll.</p></section><section class="print-page" id="cli" heading-number="4"><nav class='md-tags'><span class='md-tag'>Developer guide</span><span class='md-tag'>Command line</span></nav><h1 id="command-reference">Command reference<a class="headerlink" href="#cli-command-reference" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#cli-__codelineno-0-1"></a>vmt [GLOBAL FLAGS] COMMAND [COMMAND FLAGS]
+</code></pre></div>
+<p><code>vexy-mkdocs-tools</code> and <code>vmt</code> are the same program. <code>python -m vexy_mkdocs_tools</code>
+also runs it. The command line is built with
+<a href="https://github.com/google/python-fire">Python Fire</a>, so <code>--help</code> after any
+command shows its flags:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#cli-__codelineno-1-1"></a>vmt<span class="w"> </span>--help
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#cli-__codelineno-1-2"></a>vmt<span class="w"> </span>build<span class="w"> </span>--help
+</code></pre></div>
+<h2 id="cli-global-flags">Global flags<a class="headerlink" href="#cli-global-flags" title="Permanent link">&para;</a></h2>
+<p>These flags choose the folders the commands work on. Relative paths are resolved
+against the current working directory.</p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Short</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--root</code></td>
+<td><code>-r</code></td>
+<td>Found by searching upwards</td>
+<td>The site root folder</td>
+</tr>
+<tr>
+<td><code>--config</code></td>
+<td><code>-c</code></td>
+<td><code>&lt;root&gt;/mkdocs/mkdocs.yml</code></td>
+<td>The ProperDocs configuration file</td>
+</tr>
+<tr>
+<td><code>--docs</code></td>
+<td><code>-d</code></td>
+<td><code>&lt;root&gt;/docs</code></td>
+<td>The output folder</td>
+</tr>
+<tr>
+<td><code>--src</code></td>
+<td><code>-s</code></td>
+<td><code>&lt;root&gt;/src_docs/md</code></td>
+<td>The Markdown folder that Flowmark formats</td>
+</tr>
+</tbody>
+</table>
+<p>Fire accepts these flags before or after the command name, so
+<code>vmt --root site build</code> and <code>vmt build --root site</code> do the same thing.</p>
+<p><code>--src</code> only tells the format step where the Markdown is. ProperDocs reads its
+source folder from <code>docs_dir</code> in the configuration file. See
+<a href="#configuration">Site configuration</a>.</p>
+<p>Without <code>--root</code>, the tool searches for the site root before it runs any
+command. See <a href="#site-layout-how-the-site-root-is-found">Site layout</a>.</p>
+<h2 id="cli-build"><code>build</code><a class="headerlink" href="#cli-build" title="Permanent link">&para;</a></h2>
+<p>Runs the full pipeline.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#cli-__codelineno-2-1"></a>vmt<span class="w"> </span>build<span class="w"> </span><span class="o">[</span>--verbose<span class="o">]</span><span class="w"> </span><span class="o">[</span>--no-format<span class="o">]</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Short</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--verbose</code></td>
+<td><code>-v</code></td>
+<td>off</td>
+<td>Log at <code>DEBUG</code> level</td>
+</tr>
+<tr>
+<td><code>--no-format</code> (also <code>--no_format</code>)</td>
+<td><code>-n</code></td>
+<td>off</td>
+<td>Skip the Flowmark step</td>
+</tr>
+</tbody>
+</table>
+<p>Steps, in order:</p>
+<ol>
+<li>Unless <code>--no-format</code> is given, run Flowmark over the <code>--src</code> folder (see
+   <a href="#cli-format"><code>format</code></a>). If the folder does not exist, the build stops with
+   <code>source Markdown directory missing: &lt;path&gt;</code>.</li>
+<li>Delete everything in the <code>--docs</code> folder except <code>CNAME</code>. Create the folder if
+   it does not exist.</li>
+<li>Stop with <code>mkdocs config missing: &lt;path&gt;</code> if the configuration file does not
+   exist.</li>
+<li>Run <code>properdocs build -f &lt;config&gt; -d &lt;docs&gt;</code> from the site root.</li>
+<li>Create <code>&lt;docs&gt;/.nojekyll</code>.</li>
+</ol>
+<p>If any step fails, the tool logs the error and exits with status 1. A failed
+ProperDocs run is reported as <code>build failed (exit &lt;code&gt;)</code>.</p>
+<h2 id="cli-serve"><code>serve</code><a class="headerlink" href="#cli-serve" title="Permanent link">&para;</a></h2>
+<p>Starts the ProperDocs development server with live reload.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#cli-__codelineno-3-1"></a>vmt<span class="w"> </span>serve<span class="w"> </span><span class="o">[</span>--verbose<span class="o">]</span>
+</code></pre></div>
+<p>The tool runs <code>properdocs serve -f &lt;config&gt;</code> from the site root. ProperDocs
+builds the preview into a temporary folder, so <code>docs/</code> is left alone. Stop
+the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>; the tool prints <code>Server stopped</code>.</p>
+<h2 id="cli-clean"><code>clean</code><a class="headerlink" href="#cli-clean" title="Permanent link">&para;</a></h2>
+<p>Empties the output folder without building.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#cli-__codelineno-4-1"></a>vmt<span class="w"> </span>clean<span class="w"> </span><span class="o">[</span>--verbose<span class="o">]</span>
+</code></pre></div>
+<p>Deletes every file and folder in <code>--docs</code> except <code>CNAME</code>, and logs
+<code>Cleaned &lt;docs&gt; (preserved CNAME)</code>. Symbolic links are removed, not followed.</p>
+<h2 id="cli-format"><code>format</code><a class="headerlink" href="#cli-format" title="Permanent link">&para;</a></h2>
+<p>Formats the Markdown source in place with Flowmark.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#cli-__codelineno-5-1"></a>vmt<span class="w"> </span>format<span class="w"> </span><span class="o">[</span>--verbose<span class="o">]</span>
+</code></pre></div>
+<p>The tool runs this command from the site root:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#cli-__codelineno-6-1"></a>flowmark<span class="w"> </span>--inplace<span class="w"> </span>--nobackup<span class="w"> </span>--semantic<span class="w"> </span>--cleanups<span class="w"> </span>--smartquotes<span class="w"> </span>--ellipses<span class="w"> </span>--width<span class="w"> </span><span class="m">0</span><span class="w"> </span>&lt;src&gt;
+</code></pre></div>
+<p>With these options Flowmark rewrites the files without keeping backups, applies
+its cleanups, turns straight quotes into typographic quotes and <code>...</code> into <code>…</code>,
+and does not wrap lines.</p>
+<p>If <code>flowmark</code> is not on the <code>PATH</code>, the command logs this warning and returns
+without an error:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#cli-__codelineno-7-1"></a>flowmark not on PATH; install the [flowmark] extra (`uv pip install vexy-mkdocs-tools[flowmark]`) to enable this step
+</code></pre></div>
+<h2 id="cli-version"><code>version</code><a class="headerlink" href="#cli-version" title="Permanent link">&para;</a></h2>
+<p>Prints the installed package version, for example <code>0.1.1</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#cli-__codelineno-8-1"></a>vmt<span class="w"> </span>version
+</code></pre></div>
+<h2 id="cli-logging">Logging<a class="headerlink" href="#cli-logging" title="Permanent link">&para;</a></h2>
+<p>Messages go to standard error in the form <code>LEVEL    | message</code>. The default
+level is <code>INFO</code>. Two settings change it:</p>
+<ul>
+<li><code>--verbose</code> on any command except <code>version</code> sets the level to <code>DEBUG</code>. At
+  that level <code>clean</code> and <code>build</code> also log every file they remove.</li>
+<li>The <code>VMT_LOG_LEVEL</code> environment variable sets the level when <code>--verbose</code> is
+  not given, for example <code>VMT_LOG_LEVEL=WARNING vmt build</code>.</li>
+</ul>
+<p>ProperDocs prints its own messages in its own format (<code>INFO    -  …</code>). The two
+settings above do not affect them.</p></section><section class="print-page" id="site-layout" heading-number="5"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="site-layout">Site layout<a class="headerlink" href="#site-layout-site-layout" title="Permanent link">&para;</a></h1>
+<p><code>vmt</code> expects every site to use the same folder structure. This page describes
+that structure and how the tool finds it.</p>
+<h2 id="site-layout-the-default-layout">The default layout<a class="headerlink" href="#site-layout-the-default-layout" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#site-layout-__codelineno-0-1"></a>&lt;root&gt;/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#site-layout-__codelineno-0-2"></a>├── mkdocs/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#site-layout-__codelineno-0-3"></a>│   └── mkdocs.yml      # --config
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#site-layout-__codelineno-0-4"></a>├── src_docs/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#site-layout-__codelineno-0-5"></a>│   └── md/             # --src: Markdown source
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#site-layout-__codelineno-0-6"></a>│       ├── index.md
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#site-layout-__codelineno-0-7"></a>│       └── CNAME       # optional custom domain
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#site-layout-__codelineno-0-8"></a>└── docs/               # --docs: build output
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Role</th>
+<th>Flag to change it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mkdocs/mkdocs.yml</code></td>
+<td>ProperDocs configuration</td>
+<td><code>--config</code></td>
+</tr>
+<tr>
+<td><code>src_docs/md/</code></td>
+<td>Markdown source; Flowmark formats this folder</td>
+<td><code>--src</code></td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>Generated site; GitHub Pages serves it</td>
+<td><code>--docs</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="site-layout-how-the-site-root-is-found">How the site root is found<a class="headerlink" href="#site-layout-how-the-site-root-is-found" title="Permanent link">&para;</a></h2>
+<p>When you do not pass <code>--root</code>, the tool starts in the current working directory
+and checks it and then each parent folder in turn. The first folder that
+contains both of these is the site root:</p>
+<ul>
+<li>a file <code>mkdocs/mkdocs.yml</code>, and</li>
+<li>a folder <code>src_docs/</code>.</li>
+</ul>
+<p>So you can run <code>vmt build</code> from the site root or from any folder below it, such
+as <code>src_docs/md/chapter-1/</code>.</p>
+<p>If no folder matches, the tool stops with:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#site-layout-__codelineno-1-1"></a>BuildError: cannot locate site root (no mkdocs/mkdocs.yml + src_docs/ found walking up from cwd). Pass --root explicitly.
+</code></pre></div>
+<p>The search runs before the command itself, so it applies to every command,
+including <code>version</code> and <code>clean</code>. With <code>--root</code>, the search is skipped and the
+named folder is used as it is; the tool does not check that it has the expected
+contents.</p>
+<h2 id="site-layout-the-output-folder">The output folder<a class="headerlink" href="#site-layout-the-output-folder" title="Permanent link">&para;</a></h2>
+<p><code>vmt build</code> and <code>vmt clean</code> delete everything in <code>docs/</code> except <code>CNAME</code>. Do not
+keep hand-written files in <code>docs/</code>. Put files that should appear in the built
+site, such as images, downloads or <code>CNAME</code>, in <code>src_docs/md/</code>. ProperDocs copies
+every file that is not Markdown from there into <code>docs/</code>, keeping its relative
+path.</p>
+<p>After a build, <code>docs/</code> always contains an empty <code>.nojekyll</code> file.</p>
+<h2 id="site-layout-the-cname-file">The <code>CNAME</code> file<a class="headerlink" href="#site-layout-the-cname-file" title="Permanent link">&para;</a></h2>
+<p>GitHub Pages reads the custom domain from <code>docs/CNAME</code>. Keep the file in
+<code>src_docs/md/CNAME</code>.</p>
+<p><code>vmt clean</code> keeps an existing <code>docs/CNAME</code>. A full <code>vmt build</code> does not: after
+the tool's own clean step, <code>properdocs build</code> empties the output folder again
+before it writes the site. A <code>CNAME</code> that exists only in <code>docs/</code> is therefore
+gone after <code>vmt build</code>. A <code>CNAME</code> in <code>src_docs/md/</code> is copied back on every
+build.</p>
+<h2 id="site-layout-using-a-different-layout">Using a different layout<a class="headerlink" href="#site-layout-using-a-different-layout" title="Permanent link">&para;</a></h2>
+<p>Pass the paths explicitly. For example, for a site that keeps its configuration
+at the top level and its Markdown in <code>content/</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#site-layout-__codelineno-2-1"></a>vmt<span class="w"> </span>--root<span class="w"> </span>.<span class="w"> </span>--config<span class="w"> </span>mkdocs.yml<span class="w"> </span>--src<span class="w"> </span>content<span class="w"> </span>--docs<span class="w"> </span>public<span class="w"> </span>build
+</code></pre></div>
+<p>Remember to set <code>docs_dir: content</code> in that configuration file as well, because
+<code>--src</code> does not change where ProperDocs reads from.</p></section><section class="print-page" id="configuration" heading-number="6"><nav class='md-tags'><span class='md-tag'>Developer guide</span><span class='md-tag'>Configuration</span></nav><h1 id="site-configuration">Site configuration<a class="headerlink" href="#configuration-site-configuration" title="Permanent link">&para;</a></h1>
+<p><code>vmt</code> does not have a configuration file of its own. It passes
+<code>mkdocs/mkdocs.yml</code> to ProperDocs, which reads it with the same keys as MkDocs.
+This page covers the settings that matter when the file lives in <code>mkdocs/</code> and
+the bundled packages are used.</p>
+<h2 id="configuration-a-minimal-configuration">A minimal configuration<a class="headerlink" href="#configuration-a-minimal-configuration" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#configuration-__codelineno-0-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My site</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#configuration-__codelineno-0-2"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../src_docs/md</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#configuration-__codelineno-0-3"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#configuration-__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx</span>
+</code></pre></div>
+<h3 id="configuration-docs_dir"><code>docs_dir</code><a class="headerlink" href="#configuration-docs_dir" title="Permanent link">&para;</a></h3>
+<p>ProperDocs resolves a relative <code>docs_dir</code> against the folder that contains the
+configuration file. The file is in <code>mkdocs/</code>, so the Markdown folder is
+<code>../src_docs/md</code>. Without this line, ProperDocs looks for <code>mkdocs/docs/</code>.</p>
+<p><code>vmt</code> does not pass the source folder to ProperDocs. The <code>--src</code> flag only
+affects the Flowmark step.</p>
+<h3 id="configuration-site_dir"><code>site_dir</code><a class="headerlink" href="#configuration-site_dir" title="Permanent link">&para;</a></h3>
+<p>You do not need to set <code>site_dir</code>. <code>vmt build</code> passes <code>-d &lt;docs&gt;</code> to
+<code>properdocs build</code>, which overrides it.</p>
+<h3 id="configuration-theme"><code>theme</code><a class="headerlink" href="#configuration-theme" title="Permanent link">&para;</a></h3>
+<p>The bundled theme package, <code>mkdocs-materialx</code>, registers the theme name
+<code>materialx</code>, and that is the only theme ProperDocs accepts with the bundled
+packages. Other names fail:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#configuration-__codelineno-1-1"></a>ERROR   -  Config value 'theme': Unrecognised theme name: 'material'. The available installed themes are: materialx
+</code></pre></div>
+<p>ProperDocs does not ship the classic <code>mkdocs</code> and <code>readthedocs</code> themes. Asking
+for one prints a hint such as <code>pip install properdocs-theme-mkdocs</code>.</p>
+<h2 id="configuration-plugins-you-can-enable">Plugins you can enable<a class="headerlink" href="#configuration-plugins-you-can-enable" title="Permanent link">&para;</a></h2>
+<p>These plugin names are available after installing <code>vexy-mkdocs-tools</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Plugin name</th>
+<th>Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>materialx/search</code>, <code>materialx/meta</code>, <code>materialx/tags</code></td>
+<td><code>mkdocs-materialx</code></td>
+</tr>
+<tr>
+<td><code>materialx/blog</code>, <code>materialx/group</code>, <code>materialx/info</code>, <code>materialx/meta</code>, <code>materialx/offline</code>, <code>materialx/optimize</code>, <code>materialx/privacy</code>, <code>materialx/search</code>, <code>materialx/social</code>, <code>materialx/tags</code></td>
+<td><code>mkdocs-materialx</code></td>
+</tr>
+<tr>
+<td><code>awesome-nav</code></td>
+<td><code>mkdocs-awesome-nav</code></td>
+</tr>
+<tr>
+<td><code>include-markdown</code></td>
+<td><code>mkdocs-include-markdown-plugin</code></td>
+</tr>
+<tr>
+<td><code>llmstxt</code></td>
+<td><code>mkdocs-llmstxt</code></td>
+</tr>
+<tr>
+<td><code>copy-to-llm</code></td>
+<td><code>mkdocs-copy-to-llm</code></td>
+</tr>
+<tr>
+<td><code>rss</code></td>
+<td><code>mkdocs-rss-plugin</code></td>
+</tr>
+<tr>
+<td><code>mkdocstrings</code> (Python handler)</td>
+<td><code>mkdocstrings[python]</code></td>
+</tr>
+<tr>
+<td><code>autorefs</code></td>
+<td><code>mkdocs-autorefs</code></td>
+</tr>
+<tr>
+<td><code>codeinclude</code></td>
+<td><code>mkdocs-codeinclude-plugin</code></td>
+</tr>
+<tr>
+<td><code>print-site</code></td>
+<td><code>mkdocs-print-site-plugin</code></td>
+</tr>
+<tr>
+<td><code>document-dates</code></td>
+<td><code>mkdocs-document-dates</code>, installed as a dependency of <code>mkdocs-materialx</code></td>
+</tr>
+</tbody>
+</table>
+<p>List them in the usual way:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#configuration-__codelineno-2-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#configuration-__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#configuration-__codelineno-2-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-nav</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#configuration-__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">include-markdown</span>
+</code></pre></div>
+<p>Each plugin has its own options; see the documentation of its package.</p>
+<h2 id="configuration-markdown-extensions">Markdown extensions<a class="headerlink" href="#configuration-markdown-extensions" title="Permanent link">&para;</a></h2>
+<p><code>pymdown-extensions</code> is installed, so you can enable any <code>pymdownx.*</code> extension:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#configuration-__codelineno-3-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#configuration-__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#configuration-__codelineno-3-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#configuration-__codelineno-3-4"></a><span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#configuration-__codelineno-3-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.highlight</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#configuration-__codelineno-3-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#configuration-__codelineno-3-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tabbed</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#configuration-__codelineno-3-8"></a><span class="w">      </span><span class="nt">alternate_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<h2 id="configuration-a-fuller-example">A fuller example<a class="headerlink" href="#configuration-a-fuller-example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#configuration-__codelineno-4-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My site</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#configuration-__codelineno-4-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#configuration-__codelineno-4-3"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../src_docs/md</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#configuration-__codelineno-4-4"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#configuration-__codelineno-4-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#configuration-__codelineno-4-6"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#configuration-__codelineno-4-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#configuration-__codelineno-4-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#configuration-__codelineno-4-9"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#configuration-__codelineno-4-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#configuration-__codelineno-4-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">include-markdown</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#configuration-__codelineno-4-12"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#configuration-__codelineno-4-13"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#configuration-__codelineno-4-14"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#configuration-__codelineno-4-15"></a><span class="nt">nav</span><span class="p">:</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#configuration-__codelineno-4-16"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some plugins need options before they run. For example, <code>llmstxt</code> without a
+<code>sections</code> option stops the build with
+<code>Plugin 'llmstxt' option 'sections': Required configuration not provided.</code>
+Check each plugin's documentation; <code>vmt</code> passes the file to ProperDocs
+unchanged.</p>
+</div>
+<h2 id="configuration-the-configuration-used-by-this-site">The configuration used by this site<a class="headerlink" href="#configuration-the-configuration-used-by-this-site" title="Permanent link">&para;</a></h2>
+<p>This code block is read from the actual site configuration at build time:</p>
+<div class="highlight"><span class="filename">Site configuration</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#configuration-__codelineno-5-1"></a><span class="c1"># this_file: src_docs/mkdocs.yml</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#configuration-__codelineno-5-2"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vexy-mkdocs-tools</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#configuration-__codelineno-5-3"></a><span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">One command that builds every FontLab/Vexy documentation site with ProperDocs, MaterialX and a bundled plugin set</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#configuration-__codelineno-5-4"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://vexy.dev/vexy-mkdocs-tools/</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#configuration-__codelineno-5-5"></a><span class="nt">repo_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/vexyart/vexy-mkdocs-tools</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#configuration-__codelineno-5-6"></a><span class="nt">repo_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vexyart/vexy-mkdocs-tools</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#configuration-__codelineno-5-7"></a><span class="nt">edit_uri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">edit/main/src_docs/md/</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#configuration-__codelineno-5-8"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#configuration-__codelineno-5-9"></a><span class="nt">site_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../docs</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#configuration-__codelineno-5-10"></a><span class="nt">use_directory_urls</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#configuration-__codelineno-5-11"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#configuration-__codelineno-5-12"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#configuration-__codelineno-5-13"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#configuration-__codelineno-5-14"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.path</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#configuration-__codelineno-5-15"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#configuration-__codelineno-5-16"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#configuration-__codelineno-5-17"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.footer</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#configuration-__codelineno-5-18"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc.follow</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#configuration-__codelineno-5-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.highlight</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#configuration-__codelineno-5-20"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#configuration-__codelineno-5-21"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#configuration-__codelineno-5-22"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#configuration-__codelineno-5-23"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#configuration-__codelineno-5-24"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#configuration-__codelineno-5-25"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#configuration-__codelineno-5-26"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="nv">material/brightness-7</span><span class="p p-Indicator">,</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">Switch to dark mode</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#configuration-__codelineno-5-27"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slate</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#configuration-__codelineno-5-28"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#configuration-__codelineno-5-29"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#configuration-__codelineno-5-30"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="nv">material/brightness-4</span><span class="p p-Indicator">,</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">Switch to light mode</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#configuration-__codelineno-5-31"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#configuration-__codelineno-5-32"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">abbr</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#configuration-__codelineno-5-33"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#configuration-__codelineno-5-34"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#configuration-__codelineno-5-35"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">def_list</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#configuration-__codelineno-5-36"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">footnotes</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#configuration-__codelineno-5-37"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md_in_html</span>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#configuration-__codelineno-5-38"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tables</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#configuration-__codelineno-5-39"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="nv">true</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#configuration-__codelineno-5-40"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#configuration-__codelineno-5-41"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="nv">true</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#configuration-__codelineno-5-42"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#configuration-__codelineno-5-43"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span>
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#configuration-__codelineno-5-44"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#configuration-__codelineno-5-45"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#configuration-__codelineno-5-46"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tabbed</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">alternate_style</span><span class="p">:</span><span class="w"> </span><span class="nv">true</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#configuration-__codelineno-5-47"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="nv">true</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#configuration-__codelineno-5-48"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#configuration-__codelineno-5-49"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx/meta</span>
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#configuration-__codelineno-5-50"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx/tags</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#configuration-__codelineno-5-51"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-nav</span>
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#configuration-__codelineno-5-52"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autorefs</span>
+<a id="__codelineno-5-53" name="__codelineno-5-53" href="#configuration-__codelineno-5-53"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">mkdocstrings</span><span class="p">:</span>
+<a id="__codelineno-5-54" name="__codelineno-5-54" href="#configuration-__codelineno-5-54"></a><span class="w">      </span><span class="nt">handlers</span><span class="p">:</span>
+<a id="__codelineno-5-55" name="__codelineno-5-55" href="#configuration-__codelineno-5-55"></a><span class="w">        </span><span class="nt">python</span><span class="p">:</span>
+<a id="__codelineno-5-56" name="__codelineno-5-56" href="#configuration-__codelineno-5-56"></a><span class="w">          </span><span class="nt">paths</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">../src</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-5-57" name="__codelineno-5-57" href="#configuration-__codelineno-5-57"></a><span class="w">          </span><span class="nt">options</span><span class="p">:</span>
+<a id="__codelineno-5-58" name="__codelineno-5-58" href="#configuration-__codelineno-5-58"></a><span class="w">            </span><span class="nt">allow_inspection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<a id="__codelineno-5-59" name="__codelineno-5-59" href="#configuration-__codelineno-5-59"></a><span class="w">            </span><span class="nt">docstring_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<a id="__codelineno-5-60" name="__codelineno-5-60" href="#configuration-__codelineno-5-60"></a><span class="w">            </span><span class="nt">show_root_heading</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-61" name="__codelineno-5-61" href="#configuration-__codelineno-5-61"></a><span class="w">            </span><span class="nt">show_source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-62" name="__codelineno-5-62" href="#configuration-__codelineno-5-62"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">include-markdown</span>
+<a id="__codelineno-5-63" name="__codelineno-5-63" href="#configuration-__codelineno-5-63"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">codeinclude</span><span class="p">:</span>
+<a id="__codelineno-5-64" name="__codelineno-5-64" href="#configuration-__codelineno-5-64"></a><span class="w">      </span><span class="nt">title_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material</span>
+<a id="__codelineno-5-65" name="__codelineno-5-65" href="#configuration-__codelineno-5-65"></a><span class="w">      </span><span class="nt">block_throw</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-66" name="__codelineno-5-66" href="#configuration-__codelineno-5-66"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx/search</span>
+<a id="__codelineno-5-67" name="__codelineno-5-67" href="#configuration-__codelineno-5-67"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">print-site</span><span class="p">:</span>
+<a id="__codelineno-5-68" name="__codelineno-5-68" href="#configuration-__codelineno-5-68"></a><span class="w">      </span><span class="nt">add_to_navigation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-69" name="__codelineno-5-69" href="#configuration-__codelineno-5-69"></a><span class="w">      </span><span class="nt">print_page_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Print this guide</span>
+</code></pre></div>
+<h2 id="configuration-choose-plugins-for-the-content">Choose plugins for the content<a class="headerlink" href="#configuration-choose-plugins-for-the-content" title="Permanent link">&para;</a></h2>
+<p>Use <a href="https://lukasgeiter.github.io/mkdocs-awesome-nav/">awesome-nav</a> to keep the
+ordered navigation beside the Markdown in <code>.nav.yml</code>. MaterialX meta merges
+<code>.meta.yml</code> into page front matter; the tags plugin uses that metadata to build
+the <a href="#topics">Topics</a> index. Keep <code>materialx/search</code> explicit whenever a
+<code>plugins</code> list is present.</p>
+<p>The Python reference uses <a href="https://mkdocstrings.github.io/python/usage/">mkdocstrings</a>
+with source paths relative to the configuration file. Autorefs resolves links
+such as <a class="autorefs autorefs-internal" title="vexy_mkdocs_tools.cli.CLI" href="#source-api-vexy_mkdocs_tools.cli.CLI.clean">the CLI class</a>. Static source inspection
+keeps documentation builds independent of application services.</p>
+<p>Use codeinclude for code from maintained files and include-markdown for prose
+shared with the repository, as on the <a href="#changelog">changelog</a>. Print-site stays
+last so its combined guide contains the final navigation and resolved references.</p>
+<p>For local browser editing, install <code>vexy-mkdocs-tools[authoring]</code> and use
+<code>properdocs serve -f src_docs/mkdocs.authoring.yml -a 127.0.0.1:8000</code>.
+The authoring overlay keeps the site's plugin list and adds <code>live-edit</code>.
+Release builds use <code>mkdocs.yml</code>.</p>
+<p>Categories is useful for a wiki with a separate category taxonomy. These sites
+already use MaterialX tags, so a second category index would repeat the same
+structure. MaterialX <code>navigation.path</code> supplies breadcrumbs in the manuals;
+the breadcrumbs plugin would also generate source index files. The ToC sidebar
+plugin is intended for additional sidebar Markdown, which these sites do not
+have; <code>toc.follow</code> retains the native page outline. These plugins are evaluated
+rather than added without content that uses them.</p></section><section class="print-page" id="troubleshooting" heading-number="7"><nav class='md-tags'><span class='md-tag'>Developer guide</span><span class='md-tag'>Troubleshooting</span></nav><h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting-troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="troubleshooting-cannot-locate-site-root">Cannot locate site root<a class="headerlink" href="#troubleshooting-cannot-locate-site-root" title="Permanent link">&para;</a></h2>
+<p>Any command, including <code>vmt version</code>, stops with a traceback that ends in:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#troubleshooting-__codelineno-0-1"></a>vexy_mkdocs_tools.cli.BuildError: cannot locate site root (no mkdocs/mkdocs.yml + src_docs/ found walking up from cwd). Pass --root explicitly.
+</code></pre></div>
+<p>The tool searched the current folder and all its parents and found none that
+holds both <code>mkdocs/mkdocs.yml</code> and <code>src_docs/</code>. Do one of these:</p>
+<ul>
+<li>Change into the site folder, or any folder below it, and run the command again.</li>
+<li>Pass the site folder: <code>vmt --root path/to/site build</code>.</li>
+<li>If the site uses another layout, pass every path. See
+  <a href="#site-layout-using-a-different-layout">Site layout</a>.</li>
+</ul>
+<h2 id="troubleshooting-mkdocs-config-missing-path"><code>mkdocs config missing: &lt;path&gt;</code><a class="headerlink" href="#troubleshooting-mkdocs-config-missing-path" title="Permanent link">&para;</a></h2>
+<p><code>build</code> or <code>serve</code> found no file at the <code>--config</code> path. The default is
+<code>&lt;root&gt;/mkdocs/mkdocs.yml</code>. Check the file name and the <code>--root</code> you passed.</p>
+<h2 id="troubleshooting-docs_dir-is-not-an-existing-directory"><code>docs_dir</code> is not an existing directory<a class="headerlink" href="#troubleshooting-docs_dir-is-not-an-existing-directory" title="Permanent link">&para;</a></h2>
+<p>ProperDocs stops with a message like:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#troubleshooting-__codelineno-1-1"></a>ERROR   -  Config value 'docs_dir': The path '/…/my-site/mkdocs/docs' isn't an existing directory.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#troubleshooting-__codelineno-1-2"></a>Aborted with a configuration error!
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#troubleshooting-__codelineno-1-3"></a>ERROR    | build failed (exit 1)
+</code></pre></div>
+<p>The configuration file has no <code>docs_dir</code>, or a wrong one. ProperDocs resolves
+it against the folder of <code>mkdocs.yml</code>, so add:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#troubleshooting-__codelineno-2-1"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../src_docs/md</span>
+</code></pre></div>
+<h2 id="troubleshooting-unrecognised-theme-name-material"><code>Unrecognised theme name: 'material'</code><a class="headerlink" href="#troubleshooting-unrecognised-theme-name-material" title="Permanent link">&para;</a></h2>
+<p>ProperDocs prints:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#troubleshooting-__codelineno-3-1"></a>ERROR   -  Config value 'theme': Unrecognised theme name: 'material'. The available installed themes are: materialx
+</code></pre></div>
+<p>The bundled theme is called <code>materialx</code>. Change the theme block to:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#troubleshooting-__codelineno-4-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#troubleshooting-__codelineno-4-2"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">materialx</span>
+</code></pre></div>
+<h2 id="troubleshooting-flowmark-not-on-path"><code>flowmark not on PATH</code><a class="headerlink" href="#troubleshooting-flowmark-not-on-path" title="Permanent link">&para;</a></h2>
+<p>The format step was skipped because the <code>flowmark</code> command is not installed in
+the environment. The build continues. Either install it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#troubleshooting-__codelineno-5-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">"vexy-mkdocs-tools[flowmark]"</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#troubleshooting-__codelineno-5-2"></a><span class="c1"># or, for a one-off run</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#troubleshooting-__codelineno-5-3"></a>uvx<span class="w"> </span>--with<span class="w"> </span>flowmark<span class="w"> </span>vexy-mkdocs-tools<span class="w"> </span>build
+</code></pre></div>
+<p>or skip the step with <code>vmt build --no-format</code>.</p>
+<h2 id="troubleshooting-source-markdown-directory-missing-path"><code>source Markdown directory missing: &lt;path&gt;</code><a class="headerlink" href="#troubleshooting-source-markdown-directory-missing-path" title="Permanent link">&para;</a></h2>
+<p>The format step runs before anything else and needs the <code>--src</code> folder, by
+default <code>&lt;root&gt;/src_docs/md</code>. Create it, pass the right path with <code>--src</code>, or
+skip formatting with <code>--no-format</code>.</p>
+<h2 id="troubleshooting-build-failed-exit-code"><code>build failed (exit &lt;code&gt;)</code><a class="headerlink" href="#troubleshooting-build-failed-exit-code" title="Permanent link">&para;</a></h2>
+<p><code>properdocs build</code> returned an error. Its own messages appear above this line,
+in the <code>ERROR   -  …</code> format. Fix the reported problem in <code>mkdocs.yml</code> or the
+Markdown. A common case is a plugin that needs options, such as <code>llmstxt</code>
+without <code>sections</code>.</p>
+<h2 id="troubleshooting-the-custom-domain-disappears-after-a-build">The custom domain disappears after a build<a class="headerlink" href="#troubleshooting-the-custom-domain-disappears-after-a-build" title="Permanent link">&para;</a></h2>
+<p>The <code>CNAME</code> file was only in <code>docs/</code>. A full build empties <code>docs/</code> twice: once in
+the tool's own clean step, which keeps <code>CNAME</code>, and once inside
+<code>properdocs build</code>, which does not. Move the file to <code>src_docs/md/CNAME</code>.</p>
+<h2 id="troubleshooting-files-i-added-to-docs-are-gone">Files I added to <code>docs/</code> are gone<a class="headerlink" href="#troubleshooting-files-i-added-to-docs-are-gone" title="Permanent link">&para;</a></h2>
+<p><code>vmt build</code> and <code>vmt clean</code> delete everything in <code>docs/</code> except <code>CNAME</code>. Keep
+extra files in <code>src_docs/md/</code>; ProperDocs copies them into <code>docs/</code> on each
+build.</p>
+<h2 id="troubleshooting-too-much-or-too-little-output">Too much or too little output<a class="headerlink" href="#troubleshooting-too-much-or-too-little-output" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Add <code>--verbose</code> to see <code>DEBUG</code> messages, including every file that <code>clean</code>
+  removes.</li>
+<li>Set <code>VMT_LOG_LEVEL=WARNING</code> to hide the tool's <code>INFO</code> messages.</li>
+</ul></section><section class="print-page" id="contributing" heading-number="8"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="contributing">Contributing<a class="headerlink" href="#contributing-contributing" title="Permanent link">&para;</a></h1>
+<p><code>vexy-mkdocs-tools</code> is the shared build tool for many documentation sites. A
+change to what <code>vmt build</code> produces changes every one of those sites. Add a test
+that proves the new output is correct before you change the pipeline.</p>
+<h2 id="contributing-set-up-a-development-environment">Set up a development environment<a class="headerlink" href="#contributing-set-up-a-development-environment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Clone the repository:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#contributing-__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/vexyart/vexy-mkdocs-tools.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#contributing-__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>vexy-mkdocs-tools
+</code></pre></div>
+</li>
+<li>
+<p>Install the package and the development tools (<code>pytest</code>, <code>pytest-cov</code>,
+   <code>ruff</code>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#contributing-__codelineno-1-1"></a>uv<span class="w"> </span>sync<span class="w"> </span>--extra<span class="w"> </span>dev
+</code></pre></div>
+</li>
+</ol>
+<h2 id="contributing-run-the-checks">Run the checks<a class="headerlink" href="#contributing-run-the-checks" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#contributing-__codelineno-2-1"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>-q
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#contributing-__codelineno-2-2"></a>uvx<span class="w"> </span>ruff<span class="w"> </span>check<span class="w"> </span>src<span class="w"> </span>tests
+</code></pre></div>
+<p><code>tests/test_cli.py</code> covers:</p>
+<ul>
+<li><code>_clean_docs</code>: creates a missing folder, and keeps <code>CNAME</code> while deleting
+  everything else.</li>
+<li><code>_find_repo_root</code>: finds the root from a nested folder, and raises
+  <code>BuildError</code> when there is none.</li>
+<li>End-to-end builds of a small fixture site, which check that the page is
+  rendered, <code>.nojekyll</code> is written and <code>src_docs/md/CNAME</code> reaches the output.
+  These tests are skipped when <code>properdocs</code> is not on the <code>PATH</code>.</li>
+</ul>
+<p>CI (<code>.github/workflows/ci.yml</code>) runs <code>ruff</code>, the tests and a package build on
+Python 3.12 and 3.13 for every push and pull request to <code>main</code>.</p>
+<h2 id="contributing-code-layout">Code layout<a class="headerlink" href="#contributing-code-layout" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>src/vexy_mkdocs_tools/cli.py</code></td>
+<td>The whole tool: the <code>CLI</code> class with <code>build</code>, <code>serve</code>, <code>clean</code>, <code>format</code> and <code>version</code>, plus helper functions</td>
+</tr>
+<tr>
+<td><code>src/vexy_mkdocs_tools/__init__.py</code></td>
+<td>Exposes <code>__version__</code></td>
+</tr>
+<tr>
+<td><code>src/vexy_mkdocs_tools/__main__.py</code></td>
+<td>Lets <code>python -m vexy_mkdocs_tools</code> run the tool</td>
+</tr>
+<tr>
+<td><code>src/vexy_mkdocs_tools/__version__.py</code></td>
+<td>Written by <code>hatch-vcs</code> at build time; ignored by git</td>
+</tr>
+</tbody>
+</table>
+<p>Every source file starts with a <code>this_file:</code> comment that gives its path.</p>
+<h2 id="contributing-build-the-package-and-this-documentation">Build the package and this documentation<a class="headerlink" href="#contributing-build-the-package-and-this-documentation" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#contributing-__codelineno-3-1"></a>./build.sh<span class="w">            </span><span class="c1"># documentation and package</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#contributing-__codelineno-3-2"></a>./build.sh<span class="w"> </span>docs<span class="w">       </span><span class="c1"># documentation only</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#contributing-__codelineno-3-3"></a>./build.sh<span class="w"> </span>package<span class="w">    </span><span class="c1"># dist/*.whl and dist/*.tar.gz, then twine check</span>
+</code></pre></div>
+<p>This documentation does not use <code>vmt</code>. Its source is in <code>src_docs/md/</code>, its
+configuration in <code>src_docs/mkdocs.yml</code>, and <code>src_docs/build.sh</code> builds it into
+<code>docs/</code> with ProperDocs and MaterialX in strict mode. For a live preview:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#contributing-__codelineno-4-1"></a>src_docs/build.sh<span class="w"> </span>serve
+</code></pre></div>
+<p>The <code>Docs</code> workflow rebuilds <code>docs/</code> and commits it after every push to <code>main</code>
+that changes <code>src_docs/</code>.</p>
+<h2 id="contributing-release">Release<a class="headerlink" href="#contributing-release" title="Permanent link">&para;</a></h2>
+<p>The version comes from the latest <code>vX.Y.Z</code> git tag through <code>hatch-vcs</code>.</p>
+<p><code>./publish.sh</code> releases from a local machine:</p>
+<ol>
+<li><code>uvx gitnextver</code> commits pending changes, tags the next <code>vX.Y.Z</code> and pushes.</li>
+<li><code>./build.sh package</code> builds the wheel and source distribution.</li>
+<li><code>uv publish dist/*</code> uploads them. It needs <code>UV_PUBLISH_TOKEN</code> or another
+   <code>uv publish</code> credential.</li>
+</ol>
+<p>The pushed tag also starts <code>.github/workflows/release.yml</code>. It lints, tests and
+builds again, uploads to PyPI with Trusted Publishing, and creates a GitHub
+release. The upload uses <code>skip-existing: true</code>, so it does not fail when
+<code>publish.sh</code> has already uploaded that version.</p></section><section class="print-page" id="changelog" heading-number="9"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="changelog">Changelog<a class="headerlink" href="#changelog-changelog" title="Permanent link">&para;</a></h1>
+<h2 id="changelog-unreleased">[Unreleased]<a class="headerlink" href="#changelog-unreleased" title="Permanent link">&para;</a></h2>
+<h3 id="changelog-documentation-plugins">Documentation plugins<a class="headerlink" href="#changelog-documentation-plugins" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bundle source-backed Python references, cross-references, code includes and print-site; add a local authoring extra.</li>
+<li>Use MaterialX metadata, tags and search, ordered awesome-nav navigation, a topic index and a combined print guide.</li>
+<li>Render this site configuration and changelog directly from maintained repository files.</li>
+<li>Add an integration build checking rendered includes, API links, inherited tags, search and print output.</li>
+</ul>
+<h3 id="changelog-changed-docs-site-and-release-scripts">Changed (docs site and release scripts)<a class="headerlink" href="#changelog-changed-docs-site-and-release-scripts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Documentation moved from the hand-written Jekyll site in <code>docs/</code> to ProperDocs +
+  MaterialX: source in <code>src_docs/md/</code> (9 pages), config in <code>src_docs/mkdocs.yml</code>,
+  built into <code>docs/</code> by <code>src_docs/build.sh</code> and the new <code>Docs</code> workflow. Published at
+  https://vexy.dev/vexy-mkdocs-tools/.</li>
+<li><code>build.sh</code> builds docs and/or the package (<code>./build.sh [all|docs|package]</code>);
+  <code>publish.sh</code> tags with <code>gitnextver</code>, builds and uploads with <code>uv publish</code>.</li>
+<li><code>release.yml</code> publishes with <code>skip-existing: true</code>, so a version already uploaded
+  by <code>publish.sh</code> does not fail the workflow.</li>
+<li><code>pyproject.toml</code> gains a <code>Documentation</code> URL.</li>
+</ul>
+<h3 id="changelog-added">Added<a class="headerlink" href="#changelog-added" title="Permanent link">&para;</a></h3>
+<ul>
+<li>End-to-end tests that build a real fixture site (<code>src_docs/md</code> + <code>mkdocs.yml</code>
+  → <code>docs/</code>) with <code>properdocs</code>, asserting the page renders, <code>.nojekyll</code> is
+  written, and a <code>src_docs/md/CNAME</code> is copied into the output. Skip gracefully
+  when <code>properdocs</code> is not on PATH.</li>
+<li>Jekyll documentation site under <code>docs/</code> (Just the Docs remote theme)
+  documenting the <code>mkdocs/mkdocs.yml</code> + <code>src_docs/md/</code> → <code>docs/</code> contract, the
+  <code>materialx</code> theme name, and the <code>CNAME</code> convention.</li>
+<li><code>CLAUDE.md</code> with <code>this_file:</code> map and pipeline notes for contributors.</li>
+<li><code>TODO.md</code> capturing path-to-v1.0, robustness ideas, and known behavior notes.</li>
+</ul>
+<h3 id="changelog-changed">Changed<a class="headerlink" href="#changelog-changed" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.gitignore</code> now excludes macOS <code>.DS_Store</code> and friends.</li>
+</ul>
+<h2 id="changelog-010">[0.1.0]<a class="headerlink" href="#changelog-010" title="Permanent link">&para;</a></h2>
+<h3 id="changelog-added_1">Added<a class="headerlink" href="#changelog-added_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>First PyPI release as <code>vexy-mkdocs-tools</code>.</li>
+<li><code>build.sh</code> runs <code>uvx hatch clean</code> before building; <code>publish.sh</code> runs <code>gitnextver .</code>.</li>
+</ul>
+<h2 id="changelog-unreleased_1">[Unreleased]<a class="headerlink" href="#changelog-unreleased_1" title="Permanent link">&para;</a></h2>
+<h3 id="changelog-added_2">Added<a class="headerlink" href="#changelog-added_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Initial scaffolding: <code>pyproject.toml</code> with hatchling + hatch-vcs, <code>requires-python = "&gt;=3.12"</code>.</li>
+<li><code>src/vexy_mkdocs_tools/cli.py</code> — Fire CLI with <code>build</code>, <code>serve</code>, <code>clean</code>, <code>format</code>, <code>version</code>.</li>
+<li>Console-script entry points <code>vexy-mkdocs-tools</code> and <code>vmt</code>.</li>
+<li>Bundled dependencies: ProperDocs 1.6.7+, MaterialX 10.1.4+, <code>pymdown-extensions</code>, <code>mkdocs-awesome-nav</code>, <code>mkdocs-include-markdown-plugin</code>, <code>mkdocs-llmstxt</code>, <code>mkdocs-copy-to-llm</code>, <code>mkdocs-rss-plugin</code>.</li>
+<li>Optional <code>[flowmark]</code> extra for in-place Markdown formatting.</li>
+<li><code>tests/test_cli.py</code> — pytest smoke tests for <code>_clean_docs</code> (CNAME preservation) and <code>_find_repo_root</code> (walk-up + missing-root error).</li>
+<li><code>build.sh</code>, <code>publish.sh</code> — local build/publish wrappers.</li>
+<li>GitHub Actions: <code>ci.yml</code> (test on push/PR), <code>release.yml</code> (publish to PyPI on <code>v*.*.*</code> tag).</li>
+<li>README with usage, layout convention, and dev workflow.</li>
+</ul>
+<h2 id="changelog-2026-10-18-documentation-plugins">2026-10-18: documentation plugins<a class="headerlink" href="#changelog-2026-10-18-documentation-plugins" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Use MaterialX search, inherited metadata and a topic index; keep ordered navigation in awesome-nav.</li>
+<li>The documentation wrapper installs the plugins required by this site.</li>
+<li>Strict documentation build and rendered output checks passed.</li>
+</ul></section><section class="print-page" id="topics" heading-number="10"><nav class='md-tags'><span class='md-tag'>Developer guide</span></nav><h1 id="topics">Topics<a class="headerlink" href="#topics-topics" title="Permanent link">&para;</a></h1>
+<p>Find related pages by topic.</p>
+<h6 id="topics-topics.md:40-62/slug">topics.md:40-62/name<a class="headerlink" href="#topics-topics.md:40-62/slug" title="Permanent link">&para;</a></h6></section><section class="print-page" id="source-api" heading-number="11"><nav class='md-tags'><span class='md-tag'>Developer guide</span><span class='md-tag'>API</span></nav><h1 id="source-api">Source API<a class="headerlink" href="#source-api-source-api" title="Permanent link">&para;</a></h1>
+<p>Signatures and documentation are read from the current Python source during the build.</p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="source-api-vexy_mkdocs_tools.cli.CLI" class="doc doc-heading">
+            <code>vexy_mkdocs_tools.cli.CLI</code>
+
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>vexy-mkdocs-tools build orchestrator.</p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-120">120</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-121">121</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-122">122</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-123">123</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-124">124</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-125">125</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-126">126</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-127">127</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-128">128</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-129">129</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-130">130</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-131">131</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-132">132</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-133">133</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-134">134</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-135">135</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-136">136</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-137">137</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-138">138</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-139">139</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-140">140</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-141">141</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-142">142</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-143">143</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-144">144</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-145">145</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-146">146</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-147">147</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-148">148</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-149">149</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-150">150</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-151">151</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-152">152</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-153">153</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-154">154</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-155">155</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-156">156</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-157">157</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-158">158</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-159">159</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-160">160</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-161">161</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-162">162</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-163">163</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-164">164</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-165">165</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-166">166</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-167">167</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-168">168</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-169">169</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-170">170</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-171">171</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-172">172</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-173">173</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-174">174</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-175">175</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-176">176</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-177">177</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-178">178</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-179">179</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-180">180</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-181">181</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-182">182</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-183">183</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-184">184</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-185">185</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-186">186</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-187">187</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-188">188</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-189">189</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-190">190</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-191">191</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-192">192</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-193">193</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-194">194</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-195">195</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-196">196</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-197">197</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-198">198</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-199">199</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-200">200</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-201">201</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-202">202</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-203">203</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-204">204</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-120" name="__codelineno-0-120"></a><span class="k">class</span><span class="w"> </span><span class="nc">CLI</span><span class="p">:</span>
+<a id="__codelineno-0-121" name="__codelineno-0-121"></a><span class="w">    </span><span class="sd">"""vexy-mkdocs-tools build orchestrator."""</span>
+<a id="__codelineno-0-122" name="__codelineno-0-122"></a>
+<a id="__codelineno-0-123" name="__codelineno-0-123"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+<a id="__codelineno-0-124" name="__codelineno-0-124"></a>        <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-125" name="__codelineno-0-125"></a>        <span class="n">root</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-126" name="__codelineno-0-126"></a>        <span class="n">config</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-127" name="__codelineno-0-127"></a>        <span class="n">docs</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-128" name="__codelineno-0-128"></a>        <span class="n">src</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-129" name="__codelineno-0-129"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-130" name="__codelineno-0-130"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_root</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">root</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span> <span class="k">if</span> <span class="n">root</span> <span class="k">else</span> <span class="n">_find_repo_root</span><span class="p">()</span>
+<a id="__codelineno-0-131" name="__codelineno-0-131"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_config</span> <span class="o">=</span> <span class="p">(</span>
+<a id="__codelineno-0-132" name="__codelineno-0-132"></a>            <span class="n">Path</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span> <span class="k">if</span> <span class="n">config</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span> <span class="o">/</span> <span class="s2">"mkdocs"</span> <span class="o">/</span> <span class="s2">"mkdocs.yml"</span>
+<a id="__codelineno-0-133" name="__codelineno-0-133"></a>        <span class="p">)</span>
+<a id="__codelineno-0-134" name="__codelineno-0-134"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span> <span class="k">if</span> <span class="n">docs</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span> <span class="o">/</span> <span class="s2">"docs"</span>
+<a id="__codelineno-0-135" name="__codelineno-0-135"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_src_docs_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span> <span class="k">if</span> <span class="n">src</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span> <span class="o">/</span> <span class="s2">"src_docs"</span> <span class="o">/</span> <span class="s2">"md"</span>
+<a id="__codelineno-0-136" name="__codelineno-0-136"></a>
+<a id="__codelineno-0-137" name="__codelineno-0-137"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-138" name="__codelineno-0-138"></a><span class="w">        </span><span class="sd">"""Remove everything in docs/ except CNAME."""</span>
+<a id="__codelineno-0-139" name="__codelineno-0-139"></a>        <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-140" name="__codelineno-0-140"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-141" name="__codelineno-0-141"></a>            <span class="n">_clean_docs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">)</span>
+<a id="__codelineno-0-142" name="__codelineno-0-142"></a>        <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-143" name="__codelineno-0-143"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-144" name="__codelineno-0-144"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-145" name="__codelineno-0-145"></a>
+<a id="__codelineno-0-146" name="__codelineno-0-146"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-147" name="__codelineno-0-147"></a><span class="w">        </span><span class="sd">"""Format src_docs/md/ in place via Flowmark."""</span>
+<a id="__codelineno-0-148" name="__codelineno-0-148"></a>        <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-149" name="__codelineno-0-149"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-150" name="__codelineno-0-150"></a>            <span class="n">_format_with_flowmark</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_docs_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-151" name="__codelineno-0-151"></a>        <span class="k">except</span> <span class="p">(</span><span class="n">BuildError</span><span class="p">,</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-152" name="__codelineno-0-152"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-153" name="__codelineno-0-153"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-154" name="__codelineno-0-154"></a>
+<a id="__codelineno-0-155" name="__codelineno-0-155"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">no_format</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-156" name="__codelineno-0-156"></a><span class="w">        </span><span class="sd">"""Run full pipeline: format → clean → properdocs build → write .nojekyll."""</span>
+<a id="__codelineno-0-157" name="__codelineno-0-157"></a>        <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-158" name="__codelineno-0-158"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-159" name="__codelineno-0-159"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">no_format</span><span class="p">:</span>
+<a id="__codelineno-0-160" name="__codelineno-0-160"></a>                <span class="n">_format_with_flowmark</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_docs_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-161" name="__codelineno-0-161"></a>            <span class="n">_clean_docs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">)</span>
+<a id="__codelineno-0-162" name="__codelineno-0-162"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="o">.</span><span class="n">is_file</span><span class="p">():</span>
+<a id="__codelineno-0-163" name="__codelineno-0-163"></a>                <span class="k">raise</span> <span class="n">BuildError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mkdocs config missing: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-164" name="__codelineno-0-164"></a>            <span class="n">_run</span><span class="p">(</span>
+<a id="__codelineno-0-165" name="__codelineno-0-165"></a>                <span class="p">[</span>
+<a id="__codelineno-0-166" name="__codelineno-0-166"></a>                    <span class="s2">"properdocs"</span><span class="p">,</span>
+<a id="__codelineno-0-167" name="__codelineno-0-167"></a>                    <span class="s2">"build"</span><span class="p">,</span>
+<a id="__codelineno-0-168" name="__codelineno-0-168"></a>                    <span class="s2">"-f"</span><span class="p">,</span>
+<a id="__codelineno-0-169" name="__codelineno-0-169"></a>                    <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="p">),</span>
+<a id="__codelineno-0-170" name="__codelineno-0-170"></a>                    <span class="s2">"-d"</span><span class="p">,</span>
+<a id="__codelineno-0-171" name="__codelineno-0-171"></a>                    <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">),</span>
+<a id="__codelineno-0-172" name="__codelineno-0-172"></a>                <span class="p">],</span>
+<a id="__codelineno-0-173" name="__codelineno-0-173"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">,</span>
+<a id="__codelineno-0-174" name="__codelineno-0-174"></a>            <span class="p">)</span>
+<a id="__codelineno-0-175" name="__codelineno-0-175"></a>            <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span> <span class="o">/</span> <span class="s2">".nojekyll"</span><span class="p">)</span><span class="o">.</span><span class="n">touch</span><span class="p">()</span>
+<a id="__codelineno-0-176" name="__codelineno-0-176"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Build complete"</span><span class="p">)</span>
+<a id="__codelineno-0-177" name="__codelineno-0-177"></a>        <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-178" name="__codelineno-0-178"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-179" name="__codelineno-0-179"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-180" name="__codelineno-0-180"></a>        <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-181" name="__codelineno-0-181"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"build failed (exit </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="n">returncode</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<a id="__codelineno-0-182" name="__codelineno-0-182"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-183" name="__codelineno-0-183"></a>
+<a id="__codelineno-0-184" name="__codelineno-0-184"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">serve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-185" name="__codelineno-0-185"></a><span class="w">        </span><span class="sd">"""Live-reload preview via properdocs serve."""</span>
+<a id="__codelineno-0-186" name="__codelineno-0-186"></a>        <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-187" name="__codelineno-0-187"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-188" name="__codelineno-0-188"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="o">.</span><span class="n">is_file</span><span class="p">():</span>
+<a id="__codelineno-0-189" name="__codelineno-0-189"></a>                <span class="k">raise</span> <span class="n">BuildError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mkdocs config missing: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-190" name="__codelineno-0-190"></a>            <span class="n">_run</span><span class="p">([</span><span class="s2">"properdocs"</span><span class="p">,</span> <span class="s2">"serve"</span><span class="p">,</span> <span class="s2">"-f"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="p">)],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-191" name="__codelineno-0-191"></a>        <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-192" name="__codelineno-0-192"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-193" name="__codelineno-0-193"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-194" name="__codelineno-0-194"></a>        <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-195" name="__codelineno-0-195"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"properdocs serve failed (exit </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="n">returncode</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<a id="__codelineno-0-196" name="__codelineno-0-196"></a>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-197" name="__codelineno-0-197"></a>        <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+<a id="__codelineno-0-198" name="__codelineno-0-198"></a>            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Server stopped"</span><span class="p">)</span>
+<a id="__codelineno-0-199" name="__codelineno-0-199"></a>
+<a id="__codelineno-0-200" name="__codelineno-0-200"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">version</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-201" name="__codelineno-0-201"></a><span class="w">        </span><span class="sd">"""Print the installed package version."""</span>
+<a id="__codelineno-0-202" name="__codelineno-0-202"></a>        <span class="kn">from</span><span class="w"> </span><span class="nn">vexy_mkdocs_tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<a id="__codelineno-0-203" name="__codelineno-0-203"></a>
+<a id="__codelineno-0-204" name="__codelineno-0-204"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="source-api-vexy_mkdocs_tools.cli.CLI.build" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">build</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">no_format</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI.build" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Run full pipeline: format → clean → properdocs build → write .nojekyll.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-155">155</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-156">156</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-157">157</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-158">158</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-159">159</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-160">160</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-161">161</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-162">162</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-163">163</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-164">164</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-165">165</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-166">166</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-167">167</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-168">168</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-169">169</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-170">170</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-171">171</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-172">172</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-173">173</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-174">174</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-175">175</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-176">176</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-177">177</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-178">178</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-179">179</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-180">180</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-181">181</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-182">182</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-155" name="__codelineno-0-155"></a><span class="k">def</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">no_format</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-156" name="__codelineno-0-156"></a><span class="w">    </span><span class="sd">"""Run full pipeline: format → clean → properdocs build → write .nojekyll."""</span>
+<a id="__codelineno-0-157" name="__codelineno-0-157"></a>    <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-158" name="__codelineno-0-158"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-159" name="__codelineno-0-159"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">no_format</span><span class="p">:</span>
+<a id="__codelineno-0-160" name="__codelineno-0-160"></a>            <span class="n">_format_with_flowmark</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_docs_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-161" name="__codelineno-0-161"></a>        <span class="n">_clean_docs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">)</span>
+<a id="__codelineno-0-162" name="__codelineno-0-162"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="o">.</span><span class="n">is_file</span><span class="p">():</span>
+<a id="__codelineno-0-163" name="__codelineno-0-163"></a>            <span class="k">raise</span> <span class="n">BuildError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mkdocs config missing: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-164" name="__codelineno-0-164"></a>        <span class="n">_run</span><span class="p">(</span>
+<a id="__codelineno-0-165" name="__codelineno-0-165"></a>            <span class="p">[</span>
+<a id="__codelineno-0-166" name="__codelineno-0-166"></a>                <span class="s2">"properdocs"</span><span class="p">,</span>
+<a id="__codelineno-0-167" name="__codelineno-0-167"></a>                <span class="s2">"build"</span><span class="p">,</span>
+<a id="__codelineno-0-168" name="__codelineno-0-168"></a>                <span class="s2">"-f"</span><span class="p">,</span>
+<a id="__codelineno-0-169" name="__codelineno-0-169"></a>                <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="p">),</span>
+<a id="__codelineno-0-170" name="__codelineno-0-170"></a>                <span class="s2">"-d"</span><span class="p">,</span>
+<a id="__codelineno-0-171" name="__codelineno-0-171"></a>                <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">),</span>
+<a id="__codelineno-0-172" name="__codelineno-0-172"></a>            <span class="p">],</span>
+<a id="__codelineno-0-173" name="__codelineno-0-173"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">,</span>
+<a id="__codelineno-0-174" name="__codelineno-0-174"></a>        <span class="p">)</span>
+<a id="__codelineno-0-175" name="__codelineno-0-175"></a>        <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span> <span class="o">/</span> <span class="s2">".nojekyll"</span><span class="p">)</span><span class="o">.</span><span class="n">touch</span><span class="p">()</span>
+<a id="__codelineno-0-176" name="__codelineno-0-176"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Build complete"</span><span class="p">)</span>
+<a id="__codelineno-0-177" name="__codelineno-0-177"></a>    <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-178" name="__codelineno-0-178"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-179" name="__codelineno-0-179"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-180" name="__codelineno-0-180"></a>    <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-181" name="__codelineno-0-181"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"build failed (exit </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="n">returncode</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<a id="__codelineno-0-182" name="__codelineno-0-182"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="source-api-vexy_mkdocs_tools.cli.CLI.clean" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">clean</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI.clean" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Remove everything in docs/ except CNAME.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-137">137</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-138">138</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-139">139</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-140">140</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-141">141</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-142">142</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-143">143</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-144">144</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-137" name="__codelineno-0-137"></a><span class="k">def</span><span class="w"> </span><span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-138" name="__codelineno-0-138"></a><span class="w">    </span><span class="sd">"""Remove everything in docs/ except CNAME."""</span>
+<a id="__codelineno-0-139" name="__codelineno-0-139"></a>    <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-140" name="__codelineno-0-140"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-141" name="__codelineno-0-141"></a>        <span class="n">_clean_docs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_docs_dir</span><span class="p">)</span>
+<a id="__codelineno-0-142" name="__codelineno-0-142"></a>    <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-143" name="__codelineno-0-143"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-144" name="__codelineno-0-144"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="source-api-vexy_mkdocs_tools.cli.CLI.format" class="doc doc-heading">
+            <code class="highlight language-python"><span class="nb">format</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI.format" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Format src_docs/md/ in place via Flowmark.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-146">146</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-147">147</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-148">148</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-149">149</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-150">150</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-151">151</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-152">152</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-153">153</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-146" name="__codelineno-0-146"></a><span class="k">def</span><span class="w"> </span><span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-147" name="__codelineno-0-147"></a><span class="w">    </span><span class="sd">"""Format src_docs/md/ in place via Flowmark."""</span>
+<a id="__codelineno-0-148" name="__codelineno-0-148"></a>    <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-149" name="__codelineno-0-149"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-150" name="__codelineno-0-150"></a>        <span class="n">_format_with_flowmark</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_docs_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-151" name="__codelineno-0-151"></a>    <span class="k">except</span> <span class="p">(</span><span class="n">BuildError</span><span class="p">,</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-152" name="__codelineno-0-152"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-153" name="__codelineno-0-153"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="source-api-vexy_mkdocs_tools.cli.CLI.serve" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">serve</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI.serve" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Live-reload preview via properdocs serve.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-184">184</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-185">185</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-186">186</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-187">187</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-188">188</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-189">189</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-190">190</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-191">191</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-192">192</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-193">193</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-194">194</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-195">195</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-196">196</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-197">197</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-198">198</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-184" name="__codelineno-0-184"></a><span class="k">def</span><span class="w"> </span><span class="nf">serve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-185" name="__codelineno-0-185"></a><span class="w">    </span><span class="sd">"""Live-reload preview via properdocs serve."""</span>
+<a id="__codelineno-0-186" name="__codelineno-0-186"></a>    <span class="n">_configure_logging</span><span class="p">(</span><span class="n">verbose</span><span class="p">)</span>
+<a id="__codelineno-0-187" name="__codelineno-0-187"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-188" name="__codelineno-0-188"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="o">.</span><span class="n">is_file</span><span class="p">():</span>
+<a id="__codelineno-0-189" name="__codelineno-0-189"></a>            <span class="k">raise</span> <span class="n">BuildError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mkdocs config missing: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-0-190" name="__codelineno-0-190"></a>        <span class="n">_run</span><span class="p">([</span><span class="s2">"properdocs"</span><span class="p">,</span> <span class="s2">"serve"</span><span class="p">,</span> <span class="s2">"-f"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_config</span><span class="p">)],</span> <span class="bp">self</span><span class="o">.</span><span class="n">_root</span><span class="p">)</span>
+<a id="__codelineno-0-191" name="__codelineno-0-191"></a>    <span class="k">except</span> <span class="n">BuildError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-192" name="__codelineno-0-192"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">))</span>
+<a id="__codelineno-0-193" name="__codelineno-0-193"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-194" name="__codelineno-0-194"></a>    <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-0-195" name="__codelineno-0-195"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"properdocs serve failed (exit </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="n">returncode</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<a id="__codelineno-0-196" name="__codelineno-0-196"></a>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-197" name="__codelineno-0-197"></a>    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+<a id="__codelineno-0-198" name="__codelineno-0-198"></a>        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Server stopped"</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="source-api-vexy_mkdocs_tools.cli.CLI.version" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">version</span><span class="p">()</span></code>
+
+<a href="#source-api-vexy_mkdocs_tools.cli.CLI.version" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Print the installed package version.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>vexy_mkdocs_tools/cli.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#source-api-__codelineno-0-200">200</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-201">201</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-202">202</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-203">203</a></span>
+<span class="normal"><a href="#source-api-__codelineno-0-204">204</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-200" name="__codelineno-0-200"></a><span class="k">def</span><span class="w"> </span><span class="nf">version</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-201" name="__codelineno-0-201"></a><span class="w">    </span><span class="sd">"""Print the installed package version."""</span>
+<a id="__codelineno-0-202" name="__codelineno-0-202"></a>    <span class="kn">from</span><span class="w"> </span><span class="nn">vexy_mkdocs_tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<a id="__codelineno-0-203" name="__codelineno-0-203"></a>
+<a id="__codelineno-0-204" name="__codelineno-0-204"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
+            
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
+            
+.print-site-enumerate-headings #installation > h1:before { content: '2 ' }
+
+                .print-site-enumerate-headings #installation h2:before { content: '2.' counter(counter-installation-2) ' ' }
+                .print-site-enumerate-headings #installation h2 {  counter-reset: counter-installation-3 ;  counter-increment: counter-installation-2 }
+            
+                .print-site-enumerate-headings #installation h3:before { content: '2.' counter(counter-installation-2) '.' counter(counter-installation-3) ' ' }
+                .print-site-enumerate-headings #installation h3 {  counter-increment: counter-installation-3 }
+            
+.print-site-enumerate-headings #quickstart > h1:before { content: '3 ' }
+
+                .print-site-enumerate-headings #quickstart h2:before { content: '3.' counter(counter-quickstart-2) ' ' }
+                .print-site-enumerate-headings #quickstart h2 {  counter-reset: counter-quickstart-3 ;  counter-increment: counter-quickstart-2 }
+            
+                .print-site-enumerate-headings #quickstart h3:before { content: '3.' counter(counter-quickstart-2) '.' counter(counter-quickstart-3) ' ' }
+                .print-site-enumerate-headings #quickstart h3 {  counter-increment: counter-quickstart-3 }
+            
+.print-site-enumerate-headings #cli > h1:before { content: '4 ' }
+
+                .print-site-enumerate-headings #cli h2:before { content: '4.' counter(counter-cli-2) ' ' }
+                .print-site-enumerate-headings #cli h2 {  counter-reset: counter-cli-3 ;  counter-increment: counter-cli-2 }
+            
+                .print-site-enumerate-headings #cli h3:before { content: '4.' counter(counter-cli-2) '.' counter(counter-cli-3) ' ' }
+                .print-site-enumerate-headings #cli h3 {  counter-increment: counter-cli-3 }
+            
+.print-site-enumerate-headings #site-layout > h1:before { content: '5 ' }
+
+                .print-site-enumerate-headings #site-layout h2:before { content: '5.' counter(counter-site-layout-2) ' ' }
+                .print-site-enumerate-headings #site-layout h2 {  counter-reset: counter-site-layout-3 ;  counter-increment: counter-site-layout-2 }
+            
+                .print-site-enumerate-headings #site-layout h3:before { content: '5.' counter(counter-site-layout-2) '.' counter(counter-site-layout-3) ' ' }
+                .print-site-enumerate-headings #site-layout h3 {  counter-increment: counter-site-layout-3 }
+            
+.print-site-enumerate-headings #configuration > h1:before { content: '6 ' }
+
+                .print-site-enumerate-headings #configuration h2:before { content: '6.' counter(counter-configuration-2) ' ' }
+                .print-site-enumerate-headings #configuration h2 {  counter-reset: counter-configuration-3 ;  counter-increment: counter-configuration-2 }
+            
+                .print-site-enumerate-headings #configuration h3:before { content: '6.' counter(counter-configuration-2) '.' counter(counter-configuration-3) ' ' }
+                .print-site-enumerate-headings #configuration h3 {  counter-increment: counter-configuration-3 }
+            
+.print-site-enumerate-headings #troubleshooting > h1:before { content: '7 ' }
+
+                .print-site-enumerate-headings #troubleshooting h2:before { content: '7.' counter(counter-troubleshooting-2) ' ' }
+                .print-site-enumerate-headings #troubleshooting h2 {  counter-reset: counter-troubleshooting-3 ;  counter-increment: counter-troubleshooting-2 }
+            
+                .print-site-enumerate-headings #troubleshooting h3:before { content: '7.' counter(counter-troubleshooting-2) '.' counter(counter-troubleshooting-3) ' ' }
+                .print-site-enumerate-headings #troubleshooting h3 {  counter-increment: counter-troubleshooting-3 }
+            
+.print-site-enumerate-headings #contributing > h1:before { content: '8 ' }
+
+                .print-site-enumerate-headings #contributing h2:before { content: '8.' counter(counter-contributing-2) ' ' }
+                .print-site-enumerate-headings #contributing h2 {  counter-reset: counter-contributing-3 ;  counter-increment: counter-contributing-2 }
+            
+                .print-site-enumerate-headings #contributing h3:before { content: '8.' counter(counter-contributing-2) '.' counter(counter-contributing-3) ' ' }
+                .print-site-enumerate-headings #contributing h3 {  counter-increment: counter-contributing-3 }
+            
+.print-site-enumerate-headings #changelog > h1:before { content: '9 ' }
+
+                .print-site-enumerate-headings #changelog h2:before { content: '9.' counter(counter-changelog-2) ' ' }
+                .print-site-enumerate-headings #changelog h2 {  counter-reset: counter-changelog-3 ;  counter-increment: counter-changelog-2 }
+            
+                .print-site-enumerate-headings #changelog h3:before { content: '9.' counter(counter-changelog-2) '.' counter(counter-changelog-3) ' ' }
+                .print-site-enumerate-headings #changelog h3 {  counter-increment: counter-changelog-3 }
+            
+.print-site-enumerate-headings #topics > h1:before { content: '10 ' }
+
+                .print-site-enumerate-headings #topics h2:before { content: '10.' counter(counter-topics-2) ' ' }
+                .print-site-enumerate-headings #topics h2 {  counter-reset: counter-topics-3 ;  counter-increment: counter-topics-2 }
+            
+                .print-site-enumerate-headings #topics h3:before { content: '10.' counter(counter-topics-2) '.' counter(counter-topics-3) ' ' }
+                .print-site-enumerate-headings #topics h3 {  counter-increment: counter-topics-3 }
+            
+.print-site-enumerate-headings #source-api > h1:before { content: '11 ' }
+
+                .print-site-enumerate-headings #source-api h2:before { content: '11.' counter(counter-source-api-2) ' ' }
+                .print-site-enumerate-headings #source-api h2 {  counter-reset: counter-source-api-3 ;  counter-increment: counter-source-api-2 }
+            
+                .print-site-enumerate-headings #source-api h3:before { content: '11.' counter(counter-source-api-2) '.' counter(counter-source-api-3) ' ' }
+                .print-site-enumerate-headings #source-api h3 {  counter-increment: counter-source-api-3 }
+            </style>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+          <div class="md-top" data-md-component="top" hidden>
+  <div class="md-top__center">
+    <button type="button" class="md-top__button md-top__button--main" data-md-action="top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+      <span>Back to top</span>
+    </button>
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--nav" for="__drawer" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+      </label>
+    
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--toc" for="__toc" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/></svg>
+      </label>
+    
+  </div>
+</div>
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://jaywhj.github.io/mkdocs-materialx/" target="_blank" rel="noopener">
+      MaterialX
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "/vexy-mkdocs-tools/", "code": null, "features": ["navigation.path", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fc193f93.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  </body>
+</html>

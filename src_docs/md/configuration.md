@@ -1,3 +1,8 @@
+---
+this_file: src_docs/md/configuration.md
+tags: [Configuration]
+---
+
 # Site configuration
 
 `vmt` does not have a configuration file of its own. It passes
@@ -47,13 +52,17 @@ These plugin names are available after installing `vexy-mkdocs-tools`:
 
 | Plugin name | Package |
 |---|---|
-| `search` | `properdocs` |
+| `materialx/search`, `materialx/meta`, `materialx/tags` | `mkdocs-materialx` |
 | `materialx/blog`, `materialx/group`, `materialx/info`, `materialx/meta`, `materialx/offline`, `materialx/optimize`, `materialx/privacy`, `materialx/search`, `materialx/social`, `materialx/tags` | `mkdocs-materialx` |
 | `awesome-nav` | `mkdocs-awesome-nav` |
 | `include-markdown` | `mkdocs-include-markdown-plugin` |
 | `llmstxt` | `mkdocs-llmstxt` |
 | `copy-to-llm` | `mkdocs-copy-to-llm` |
 | `rss` | `mkdocs-rss-plugin` |
+| `mkdocstrings` (Python handler) | `mkdocstrings[python]` |
+| `autorefs` | `mkdocs-autorefs` |
+| `codeinclude` | `mkdocs-codeinclude-plugin` |
+| `print-site` | `mkdocs-print-site-plugin` |
 | `document-dates` | `mkdocs-document-dates`, installed as a dependency of `mkdocs-materialx` |
 
 List them in the usual way:
@@ -109,3 +118,41 @@ nav:
     `Plugin 'llmstxt' option 'sections': Required configuration not provided.`
     Check each plugin's documentation; `vmt` passes the file to ProperDocs
     unchanged.
+
+## The configuration used by this site
+
+This code block is read from the actual site configuration at build time:
+
+<!--codeinclude-->
+[Site configuration](../mkdocs.yml)
+<!--/codeinclude-->
+
+## Choose plugins for the content
+
+Use [awesome-nav](https://lukasgeiter.github.io/mkdocs-awesome-nav/) to keep the
+ordered navigation beside the Markdown in `.nav.yml`. MaterialX meta merges
+`.meta.yml` into page front matter; the tags plugin uses that metadata to build
+the [Topics](topics.md) index. Keep `materialx/search` explicit whenever a
+`plugins` list is present.
+
+The Python reference uses [mkdocstrings](https://mkdocstrings.github.io/python/usage/)
+with source paths relative to the configuration file. Autorefs resolves links
+such as [the CLI class][vexy_mkdocs_tools.cli.CLI]. Static source inspection
+keeps documentation builds independent of application services.
+
+Use codeinclude for code from maintained files and include-markdown for prose
+shared with the repository, as on the [changelog](changelog.md). Print-site stays
+last so its combined guide contains the final navigation and resolved references.
+
+For local browser editing, install `vexy-mkdocs-tools[authoring]` and use
+`properdocs serve -f src_docs/mkdocs.authoring.yml -a 127.0.0.1:8000`.
+The authoring overlay keeps the site's plugin list and adds `live-edit`.
+Release builds use `mkdocs.yml`.
+
+Categories is useful for a wiki with a separate category taxonomy. These sites
+already use MaterialX tags, so a second category index would repeat the same
+structure. MaterialX `navigation.path` supplies breadcrumbs in the manuals;
+the breadcrumbs plugin would also generate source index files. The ToC sidebar
+plugin is intended for additional sidebar Markdown, which these sites do not
+have; `toc.follow` retains the native page outline. These plugins are evaluated
+rather than added without content that uses them.

@@ -1,0 +1,29 @@
+# this_file: src_docs/mkdocs.authoring.yml
+# Local authoring only. Keep this list aligned with mkdocs.yml.
+INHERIT: mkdocs.yml
+plugins:
+- materialx/meta
+- materialx/tags
+- awesome-nav
+- autorefs
+- mkdocstrings:
+    handlers:
+      python:
+        paths:
+        - ../src
+        options:
+          allow_inspection: false
+          docstring_style: null
+          show_root_heading: true
+          show_source: true
+- include-markdown
+- codeinclude:
+    title_mode: mkdocs-material
+    block_throw: true
+- materialx/search
+- live-edit:
+    websockets_host: 127.0.0.1
+    article_selector: article.md-content__inner
+- print-site:
+    add_to_navigation: true
+    print_page_title: Print this guide

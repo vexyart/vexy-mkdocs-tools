@@ -59,6 +59,12 @@
       
     
     
+      <link rel="stylesheet" href="css/print-site.css">
+    
+      <link rel="stylesheet" href="css/print-site-materialx.css">
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -597,6 +603,87 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="source-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Source API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print this guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -678,6 +765,14 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -750,8 +845,28 @@ script live in one place, and a site repository only needs its Markdown and its
 </tr>
 <tr>
 <td><code>mkdocs-include-markdown-plugin</code></td>
-<td>7.2</td>
+<td>7.3</td>
 <td>Plugin <code>include-markdown</code>: include one Markdown file in another</td>
+</tr>
+<tr>
+<td><code>mkdocs-codeinclude-plugin</code></td>
+<td>0.3.1</td>
+<td>Include code from maintained source files</td>
+</tr>
+<tr>
+<td><code>mkdocstrings[python]</code></td>
+<td>1.0.7</td>
+<td>Generate API documentation from Python source</td>
+</tr>
+<tr>
+<td><code>mkdocs-autorefs</code></td>
+<td>1.4.4</td>
+<td>Resolve references between documentation pages</td>
+</tr>
+<tr>
+<td><code>mkdocs-print-site-plugin</code></td>
+<td>2.9</td>
+<td>Combine a guide into a printable page</td>
 </tr>
 <tr>
 <td><code>mkdocs-llmstxt</code></td>
@@ -780,7 +895,8 @@ script live in one place, and a site repository only needs its Markdown and its
 </tr>
 </tbody>
 </table>
-<p>The optional <code>flowmark</code> extra adds <code>flowmark</code> 0.6.5 or later for the format step.</p>
+<p>The optional <code>flowmark</code> extra adds <code>flowmark</code> 0.6.5 or later for the format step.
+The <code>authoring</code> extra adds <code>mkdocs-live-edit-plugin</code> for editing in a local preview.</p>
 <h2 id="where-to-go-next">Where to go next<a class="headerlink" href="#where-to-go-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="installation/">Installation</a></li>
@@ -797,6 +913,17 @@ script live in one place, and a site repository only needs its Markdown and its
 
 
 
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="topics/#tag:developer-guide" class="md-tag md-tag-icon">Developer guide</a>
+      
+    
+  </nav>
 
 
 
@@ -885,10 +1012,12 @@ script live in one place, and a site repository only needs its Markdown and its
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "code": null, "features": ["navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "code": null, "features": ["navigation.path", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.fc193f93.min.js"></script>
+      
+        <script src="js/print-site.js"></script>
       
     
   </body>

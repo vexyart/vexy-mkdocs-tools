@@ -2,47 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/changelog/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/cli/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/configuration/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/contributing/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/installation/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/quickstart/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/site-layout/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://vexy.dev/vexy-mkdocs-tools/source-api/</loc>
+        <lastmod>2026-11-17</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://vexy.dev/vexy-mkdocs-tools/topics/</loc>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://vexy.dev/vexy-mkdocs-tools/troubleshooting/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>

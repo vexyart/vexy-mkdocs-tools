@@ -51,7 +51,11 @@ Installing `vexy-mkdocs-tools` also installs:
 | `mkdocs-materialx` | 10.1.4 | The `materialx` theme and its `materialx/*` plugins |
 | `pymdown-extensions` | 10.2 | Markdown extensions |
 | `mkdocs-awesome-nav` | 3.3 | Plugin `awesome-nav`: customize the navigation structure |
-| `mkdocs-include-markdown-plugin` | 7.2 | Plugin `include-markdown`: include one Markdown file in another |
+| `mkdocs-include-markdown-plugin` | 7.3 | Plugin `include-markdown`: include one Markdown file in another |
+| `mkdocs-codeinclude-plugin` | 0.3.1 | Include code from maintained source files |
+| `mkdocstrings[python]` | 1.0.7 | Generate API documentation from Python source |
+| `mkdocs-autorefs` | 1.4.4 | Resolve references between documentation pages |
+| `mkdocs-print-site-plugin` | 2.9 | Combine a guide into a printable page |
 | `mkdocs-llmstxt` | 0.2 | Plugin `llmstxt`: generate an `/llms.txt` file |
 | `mkdocs-copy-to-llm` | 0.2 | Plugin `copy-to-llm`: add "Copy to LLM" buttons |
 | `mkdocs-rss-plugin` | 1.17 | Plugin `rss`: generate RSS and JSON feeds |
@@ -59,6 +63,7 @@ Installing `vexy-mkdocs-tools` also installs:
 | `loguru` | 0.7 | Logging |
 
 The optional `flowmark` extra adds `flowmark` 0.6.5 or later for the format step.
+The `authoring` extra adds `mkdocs-live-edit-plugin` for editing in a local preview.
 
 ## Where to go next
 

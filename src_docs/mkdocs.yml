@@ -11,6 +11,7 @@ use_directory_urls: true
 theme:
   name: materialx
   features:
+    - navigation.path
     - navigation.sections
     - navigation.top
     - navigation.footer
@@ -45,14 +46,24 @@ markdown_extensions:
   - pymdownx.tabbed: {alternate_style: true}
   - pymdownx.tasklist: {custom_checkbox: true}
 plugins:
-  - search
-nav:
-  - Home: index.md
-  - Installation: installation.md
-  - Quick start: quickstart.md
-  - Command reference: cli.md
-  - Site layout: site-layout.md
-  - Site configuration: configuration.md
-  - Troubleshooting: troubleshooting.md
-  - Contributing: contributing.md
-  - Changelog: changelog.md
+  - materialx/meta
+  - materialx/tags
+  - awesome-nav
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [../src]
+          options:
+            allow_inspection: false
+            docstring_style: null
+            show_root_heading: true
+            show_source: true
+  - include-markdown
+  - codeinclude:
+      title_mode: mkdocs-material
+      block_throw: true
+  - materialx/search
+  - print-site:
+      add_to_navigation: true
+      print_page_title: Print this guide

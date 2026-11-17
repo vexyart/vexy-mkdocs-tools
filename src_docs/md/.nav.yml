@@ -1,0 +1,13 @@
+# this_file: src_docs/md/.nav.yml
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick start: quickstart.md
+  - Command reference: cli.md
+  - Site layout: site-layout.md
+  - Site configuration: configuration.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+  - Topics: topics.md
+  - Source API: source-api.md

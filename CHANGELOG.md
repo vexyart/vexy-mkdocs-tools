@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Documentation plugins
+- Bundle source-backed Python references, cross-references, code includes and print-site; add a local authoring extra.
+- Use MaterialX metadata, tags and search, ordered awesome-nav navigation, a topic index and a combined print guide.
+- Render this site configuration and changelog directly from maintained repository files.
+- Add an integration build checking rendered includes, API links, inherited tags, search and print output.
+
 ### Changed (docs site and release scripts)
 - Documentation moved from the hand-written Jekyll site in `docs/` to ProperDocs +
   MaterialX: source in `src_docs/md/` (9 pages), config in `src_docs/mkdocs.yml`,
@@ -45,3 +51,9 @@
 - `build.sh`, `publish.sh` — local build/publish wrappers.
 - GitHub Actions: `ci.yml` (test on push/PR), `release.yml` (publish to PyPI on `v*.*.*` tag).
 - README with usage, layout convention, and dev workflow.
+
+## 2026-10-18: documentation plugins
+
+- Use MaterialX search, inherited metadata and a topic index; keep ordered navigation in awesome-nav.
+- The documentation wrapper installs the plugins required by this site.
+- Strict documentation build and rendered output checks passed.
